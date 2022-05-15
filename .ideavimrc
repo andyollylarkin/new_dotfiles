@@ -1,0 +1,5 @@
+map j <Left>
+map k <Up>
+map l <Down>
+map ; <Right>
+imap jj <Esc>
