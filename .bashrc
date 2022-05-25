@@ -123,9 +123,11 @@ shopt -s extglob
 
 
 #_______EXPORTS-----------
-export PS1=📂:$PS1
 
 # ------USER DEFINED------
+shopt -s extglob
+
+
 for sourced in ~/dotenv/aliases/*; do
     source $sourced;
 done

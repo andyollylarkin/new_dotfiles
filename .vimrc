@@ -17,3 +17,7 @@ map ; <Right>
 imap jj <Esc>
 set ignorecase
 set smartcase
+
+"Prevent clear register when text pasted
+xnoremap <expr> p 'pgv"'.v:register.'y`>'
+xnoremap <expr> P 'Pgv"'.v:register.'y`>'
