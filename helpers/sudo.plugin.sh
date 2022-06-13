@@ -5,7 +5,7 @@ function _shell_buff_replace(){
     if [ -z "${OLD_BUFF}" ]; then
         return;
     fi
-    if [ ${OLD_BUFF:0:4} != 'sudo' ]; then
+    if [ "${OLD_BUFF:0:4}" != 'sudo' ]; then
         READLINE_LINE="sudo $OLD_BUFF";
         READLINE_POINT=$((${#READLINE_LINE}+1));
     fi
