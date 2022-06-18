@@ -1,0 +1,2 @@
+$if mode=emacs
+"\C-g": forward-word 
