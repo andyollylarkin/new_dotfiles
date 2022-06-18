@@ -9,7 +9,7 @@ export OSH=/home/denis/.oh-my-bash
 
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-bash is loaded.
-OSH_THEME="minimal"
+OSH_THEME="powerline"
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -122,10 +122,10 @@ shopt -s extglob
 # alias ohmybash="mate ~/.oh-my-bash"
 
 
-#_______EXPORTS-----------
+#-------EXPORTS-----------
 
-# ------USER DEFINED------
-shopt -s extglob
+#------USER DEFINED------
+shopt -s extglob;
 
 
 for sourced in ~/dotenv/aliases/*; do
