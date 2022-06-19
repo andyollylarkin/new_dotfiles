@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 function decision(){
-    declare -A rand_res;
+    declare -a rand_res;
     local decision=$((1 + $RANDOM % 10));
     for i in {1..11}; do
         rand_res[$i]=$((1 + $RANDOM % 10));
