@@ -1,0 +1,107 @@
+// Place your key bindings in this file to override the defaults
+[
+	{
+		"key": "shift+space",
+		"command": "editor.action.triggerSuggest",
+		"when": "editorHasCompletionItemProvider && textInputFocus && !editorReadonly"
+	},
+	{
+		"key": "shift+cmd+f",
+		"command": "-workbench.action.findInFiles",
+		"when": "editorTextFocus"
+	},
+	{
+		"key": "shift+cmd+f",
+		"command": "editor.fold",
+		"when": "editorTextFocus"
+	},
+	{
+		"key": "shift+cmd+u",
+		"command": "editor.unfold",
+		"when": "editorTextFocus"
+	},
+	{
+		"key": "alt+escape",
+		"command": "-editor.action.triggerSuggest",
+		"when": "editorHasCompletionItemProvider && textInputFocus && !editorReadonly"
+	},
+	{
+		"key": "shift+cmd+a",
+		"command": "workbench.action.focusActiveEditorGroup"
+	},
+	// SHOW QUICK DOCUMENTATION
+	{
+		"key": "cmd+shift+q",
+		"command": "editor.action.showHover",
+		"when": "editorTextFocus"
+	},
+	// GO TO DEFINITION
+	{
+		"key": "ctrl+alt+e",
+		"command": "editor.action.revealDefinition",
+		"when": "editorHasDefinitionProvider && editorTextFocus && !isInEmbeddedEditor"
+	},
+	// REMOVE PREV. SHORTCUT FOR DOCUMENTATION
+	{
+		"key": "cmd+k cmd+i",
+		"command": "-editor.action.showHover",
+		"when": "editorTextFocus"
+	},
+	{
+		"key": "shift+cmd+t",
+		"command": "-workbench.action.reopenClosedEditor"
+	},
+	{
+		"key": "shift+cmd+t",
+		"command": "workbench.action.terminal.toggleTerminal"
+	},
+	{
+		"key": "ctrl+`",
+		"command": "-workbench.action.terminal.toggleTerminal",
+	},
+	// VIM STYLE MOVEMENT SUGGESTION IN SUGGESTIONS MENU
+	{
+		"key": "shift+k",
+		"command": "selectPrevSuggestion",
+		"when": "suggestWidgetVisible"
+	},
+	{
+		"key": "shift+l",
+		"command": "selectNextSuggestion",
+		"when": "suggestWidgetMultipleSuggestions"
+	},
+	{
+		"key": "alt+p",
+		"command": "editor.action.triggerParameterHints",
+		"when": "editorHasSignatureHelpProvider && editorTextFocus"
+	},
+	// REMOVE OLD KEYBINDINGS OF PARAMETER HINT
+	{
+		"key": "shift+cmd+space",
+		"command": "-editor.action.triggerParameterHints",
+		"when": "editorHasSignatureHelpProvider && editorTextFocus"
+	},
+	{
+		"key": "cmd+g",
+		"command": "-editor.action.nextMatchFindAction",
+		"when": "editorFocus"
+	},
+	{
+		"key": "cmd+g",
+		"command": "workbench.view.scm"
+	},
+	{
+		"key": "ctrl+shift+g",
+		"command": "-workbench.view.scm"
+	},
+	{
+		"key": "cmd+g",
+		"command": "-editor.action.nextMatchFindAction",
+		"when": "editorFocus"
+	},
+	{
+		"key": "f12",
+		"command": "-editor.action.revealDefinition",
+		"when": "editorHasDefinitionProvider && editorTextFocus && !isInEmbeddedEditor"
+	},
+]
