@@ -121,4 +121,9 @@
 	"explorer.compactFolders": true,
 	"workbench.iconTheme": "material-icon-theme",
 	"window.menuBarVisibility": "compact",
+	// PHP
+	"php.suggest.basic": false,
+	// GITLENS
+	"gitlens.defaultDateFormat": "YYYY-MM-DD",
+	"gitlens.defaultDateShortFormat": null,
 }

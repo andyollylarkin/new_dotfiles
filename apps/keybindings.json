@@ -48,6 +48,11 @@
 		"when": "editorTextFocus"
 	},
 	{
+		"key": "ctrl+alt+l",
+		"command": "editor.action.formatDocument",
+		"when": "editorFocus"
+	},
+	{
 		"key": "shift+cmd+t",
 		"command": "-workbench.action.reopenClosedEditor"
 	},
@@ -59,21 +64,56 @@
 		"key": "ctrl+`",
 		"command": "-workbench.action.terminal.toggleTerminal",
 	},
+	{
+		"key": "alt+p",
+		"command": "showNextParameterHint",
+		"when": "editorFocus"
+	},
 	// VIM STYLE MOVEMENT SUGGESTION IN SUGGESTIONS MENU
-	{
-		"key": "shift+k",
-		"command": "selectPrevSuggestion",
-		"when": "suggestWidgetVisible"
-	},
-	{
-		"key": "shift+l",
-		"command": "selectNextSuggestion",
-		"when": "suggestWidgetMultipleSuggestions"
-	},
+	// {
+	// 	"key": "shift+k",
+	// 	"command": "selectPrevSuggestion",
+	// 	"when": "suggestWidgetVisible"
+	// },
+	// {
+	// 	"key": "shift+l",
+	// 	"command": "selectNextSuggestion",
+	// 	"when": "suggestWidgetMultipleSuggestions"
+	// },
 	{
 		"key": "alt+p",
 		"command": "editor.action.triggerParameterHints",
 		"when": "editorHasSignatureHelpProvider && editorTextFocus"
+	},
+	// {
+	// 	"key": "ctrl+shift+e",
+	// 	"command": "workbench.action.toggleSidebarVisibility",
+	// 	"when": "explorerViewletVisible && explorerViewletFocus"
+	// },
+	{
+		"key": "ctrl+shift+j",
+		"command": "workbench.action.toggleSidebarVisibility",
+		"when": "explorerViewletVisible && editorFocus"
+	},
+	{
+		"key": "ctrl+shift+`",
+		"command": "terminal.focus",
+		"when": "terminal.visible"
+	},
+	{
+		"key": "ctrl+shift+`",
+		"command": "workbench.action.toggleSidebarVisibility",
+		"when": "terminalFocus"
+	},
+	{
+		"key": "ctrl+shift+e",
+		"command": "workbench.action.focusActiveEditorGroup",
+		"when": "terminalFocus"
+	},
+	{
+		"key": "ctrl+alt+o",
+		"command": "editor.action.organizeImports",
+		"when": "editorFocus"
 	},
 	// REMOVE OLD KEYBINDINGS OF PARAMETER HINT
 	{
@@ -104,4 +144,9 @@
 		"command": "-editor.action.revealDefinition",
 		"when": "editorHasDefinitionProvider && editorTextFocus && !isInEmbeddedEditor"
 	},
+	// Disable closing window
+	{
+		"key": "ctrl+shift+w",
+		"command": "-workbench.action.closeWindow"
+	}
 ]
