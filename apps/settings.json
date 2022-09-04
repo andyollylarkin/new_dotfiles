@@ -1,129 +1,95 @@
 {
-	"workbench.colorTheme": "Dracula",
-	"security.workspace.trust.untrustedFiles": "open",
-	// VIM
-	"vim.cursorStylePerMode.normal": "block",
-	"vim.hlsearch": true,
-	"vim.searchHighlightColor": "#e52165",
-	"vim.searchHighlightTextColor": "#ffffff",
-	"vim.ignorecase": true,
-	"vim.foldfix": true,
-	"vim.normalModeKeyBindings": [
-		{
-			"before": [
-				"j"
-			],
-			"after": [
-				"Left"
-			]
-		},
-		{
-			"before": [
-				"k"
-			],
-			"after": [
-				"Up"
-			]
-		},
-		{
-			"before": [
-				"l"
-			],
-			"after": [
-				"Down"
-			]
-		},
-		{
-			"before": [
-				";"
-			],
-			"after": [
-				"Right"
-			]
-		},
-	],
-	"vim.insertModeKeyBindings": [
-		{
-			"before": [
-				"j",
-				"j"
-			],
-			"after": [
-				"<Esc>"
-			]
-		},
-	],
-	"vim.normalModeKeyBindingsNonRecursive": [
-		{
-			"before": [
-				"<Esc>"
-			],
-			"commands": [
-				":noh"
-			]
-		}
-	],
-	"vim.visualModeKeyBindings": [
-		{
-			"before": [
-				"j"
-			],
-			"after": [
-				"Left"
-			]
-		},
-		{
-			"before": [
-				"k"
-			],
-			"after": [
-				"Up"
-			]
-		},
-		{
-			"before": [
-				"l"
-			],
-			"after": [
-				"Down"
-			]
-		},
-		{
-			"before": [
-				";"
-			],
-			"after": [
-				"Right"
-			]
-		},
-	],
-	// EDITOR
-	"editor.fontSize": 13,
-	"editor.fontLigatures": true,
-	"editor.fontWeight": "500",
-	"editor.minimap.enabled": false,
-	"editor.fontFamily": "Fira Code",
-	"editor.suggest.showConstants": true,
-	"editor.suggest.showSnippets": true,
-	"editor.suggest.showConstructors": true,
-	"editor.insertSpaces": false,
-	"editor.acceptSuggestionOnEnter": "smart",
-	"editor.autoSurround": "brackets",
-	"editor.cursorStyle": "underline",
-	"editor.formatOnSave": true,
-	// GENERAL
-	"telemetry.enableTelemetry": false,
-	"telemetry.enableCrashReporter": false,
-	"window.title": "DevHub - Denis Davydov",
-	"window.titleBarStyle": "custom", // Title bar will change color to match the color theme
-	"window.closeWhenEmpty": false,
-	"explorer.confirmDelete": false,
-	"explorer.compactFolders": true,
-	"workbench.iconTheme": "material-icon-theme",
-	"window.menuBarVisibility": "compact",
-	// PHP
-	"php.suggest.basic": false,
-	// GITLENS
-	"gitlens.defaultDateFormat": "YYYY-MM-DD",
-	"gitlens.defaultDateShortFormat": null,
+  "workbench.colorTheme": "Dracula",
+  "security.workspace.trust.untrustedFiles": "open",
+  // VIM
+  "vim.cursorStylePerMode.normal": "block",
+  "vim.hlsearch": true,
+  "vim.searchHighlightColor": "#e52165",
+  "vim.searchHighlightTextColor": "#ffffff",
+  "vim.ignorecase": true,
+  "vim.foldfix": true,
+  "vim.normalModeKeyBindings": [
+    {
+      "before": ["j"],
+      "after": ["Left"]
+    },
+    {
+      "before": ["k"],
+      "after": ["Up"]
+    },
+    {
+      "before": ["l"],
+      "after": ["Down"]
+    },
+    {
+      "before": [";"],
+      "after": ["Right"]
+    }
+  ],
+  "vim.insertModeKeyBindings": [
+    {
+      "before": ["j", "j"],
+      "after": ["<Esc>"]
+    }
+  ],
+  "vim.normalModeKeyBindingsNonRecursive": [
+    {
+      "before": ["<Esc>"],
+      "commands": [":noh"]
+    }
+  ],
+  "vim.visualModeKeyBindings": [
+    {
+      "before": ["j"],
+      "after": ["Left"]
+    },
+    {
+      "before": ["k"],
+      "after": ["Up"]
+    },
+    {
+      "before": ["l"],
+      "after": ["Down"]
+    },
+    {
+      "before": [";"],
+      "after": ["Right"]
+    }
+  ],
+  // EDITOR
+  "editor.fontSize": 13,
+  "editor.fontLigatures": true,
+  "editor.fontWeight": "500",
+  "editor.minimap.enabled": false,
+  "editor.fontFamily": "Fira Code",
+  "editor.suggest.showConstants": true,
+  "editor.suggest.showSnippets": true,
+  "editor.suggest.showConstructors": true,
+  "editor.insertSpaces": false,
+  "editor.acceptSuggestionOnEnter": "smart",
+  "editor.autoSurround": "brackets",
+  "editor.cursorStyle": "underline",
+  "editor.formatOnSave": true,
+  // GENERAL
+  "telemetry.enableTelemetry": false,
+  "telemetry.enableCrashReporter": false,
+  "window.title": "DevHub - Denis Davydov",
+  "window.titleBarStyle": "custom", // Title bar will change color to match the color theme
+  "window.closeWhenEmpty": false,
+  "explorer.confirmDelete": false,
+  "explorer.compactFolders": true,
+  "workbench.iconTheme": "material-icon-theme",
+  "window.menuBarVisibility": "compact",
+  // PHP
+  "php.suggest.basic": false,
+  // GITLENS
+  "gitlens.defaultDateFormat": "YYYY-MM-DD",
+  "gitlens.defaultDateShortFormat": null,
+  "editor.formatOnSaveMode": "file",
+
+  //   CODE QUALITY TOOLS
+  "eslint.enable": true,
+
+  "prettier.useEditorConfig": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode"
 }
