@@ -71,8 +71,12 @@
   "editor.cursorStyle": "underline",
   "editor.formatOnSave": true,
   // GENERAL
-  "telemetry.enableTelemetry": false,
-  "telemetry.enableCrashReporter": false,
+  /**
+  Because my input type switch keys is: Alt + Shift.
+  Switch input also trigger MenuBar
+  **/
+  "window.customMenuBarAltFocus": false, //
+  "telemetry.telemetryLevel": "off",
   "window.title": "DevHub - Denis Davydov",
   "window.titleBarStyle": "custom", // Title bar will change color to match the color theme
   "window.closeWhenEmpty": false,
@@ -91,5 +95,11 @@
   "eslint.enable": true,
 
   "prettier.useEditorConfig": true,
-  "editor.defaultFormatter": "esbenp.prettier-vscode"
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "[cpp]": {
+    "editor.defaultFormatter": "ms-vscode.cpptools"
+  },
+  "[python]": {
+    "editor.defaultFormatter": "ms-python.python"
+  }
 }
