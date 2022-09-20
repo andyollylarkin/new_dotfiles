@@ -91,7 +91,6 @@ plugins=(
 #  fi
 
 source "$OSH"/oh-my-bash.sh
-shopt -s extglob
 
 # User configuration
 # export MANPATH="/usr/local/man:$MANPATH"
@@ -99,12 +98,12 @@ shopt -s extglob
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
 
-# Preferred editor for local and remote sessions
-# if [[ -n $SSH_CONNECTION ]]; then
-#   export EDITOR='vim'
-# else
-#   export EDITOR='mvim'
-# fi
+#Preferred editor for local and remote sessions
+if [[ -n $SSH_CONNECTION ]]; then
+  export EDITOR='vim'
+else
+  export EDITOR='mvim'
+fi
 
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
