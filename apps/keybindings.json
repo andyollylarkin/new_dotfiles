@@ -38,9 +38,14 @@
   // GO TO DEFINITION
   {
     "key": "ctrl+alt+e",
-    "command": "editor.action.revealDefinition",
+    "command": "editor.action.peekDefinition",
     "when": "editorHasDefinitionProvider && editorTextFocus && !isInEmbeddedEditor"
   },
+  {
+    "key": "ctrl+alt+i",
+    "command":"editor.action.goToImplementation",
+    "when": "editorHasDefinitionProvider && editorTextFocus && !isInEmbeddedEditor"
+  }
   // REMOVE PREV. SHORTCUT FOR DOCUMENTATION
   {
     "key": "cmd+k cmd+i",

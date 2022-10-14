@@ -122,6 +122,7 @@ fi
 
 
 #-------EXPORTS-----------
+export PATH="$PATH:/usr/local/go/bin"
 
 #------USER DEFINED------
 shopt -s extglob;
