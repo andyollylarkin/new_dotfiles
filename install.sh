@@ -39,15 +39,19 @@ rm_rc_files=(
 );
 
 #remove *rc files if exists
+echo "Remove rcfiles";
 for file in ${rm_rc_files[@]}; do
     if [ -f ${HOME}/${file} ]; then
+        echo "Remove ${file}";
         rm ${HOME}/${file};
     fi
 done
 
+echo "Install rcfiles";
 rcfiles=($(ls -a|grep -P '^(?!\.git)\.\w+'));
 for file in ${rcfiles[@]}; do
     if [ ! -f ${HOME}/${file} ]; then
+        echo "Install ${file}";
         ln -s $CURR_DIR/${file} ${HOME}/${file};
     fi
 done
