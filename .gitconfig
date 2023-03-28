@@ -1,3 +1,9 @@
 [user]
 	name = Denis Davydov
 	email = follenlast2@gmail.com
+[credential]
+	helper = manager
+[url "git@gitlab.mindsw.io:"]
+	insteadOf = https://gitlab.mindsw.io/
+[init]
+	defaultBranch = main

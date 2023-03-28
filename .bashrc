@@ -123,6 +123,7 @@ fi
 
 #-------EXPORTS-----------
 export PATH="$PATH:/usr/local/go/bin"
+export GOPATH=$(go env GOPATH);
 
 #------USER DEFINED------
 shopt -s extglob;
