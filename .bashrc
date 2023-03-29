@@ -122,11 +122,12 @@ fi
 
 
 #-------EXPORTS-----------
-export PATH="$PATH:/usr/local/go/bin"
 export GOPATH=$(go env GOPATH);
+export PATH="$PATH:/usr/local/go/bin:$GOPATH/bin"
 
 #------USER DEFINED------
 shopt -s extglob;
+set +H # disable history expansion
 
 
 for sourced in ~/dotenv/aliases/*; do
