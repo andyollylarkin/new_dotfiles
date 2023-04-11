@@ -1,0 +1,16 @@
+[
+	{
+		"name": "orchestrator",
+		"rootPath": "/home/denis/Desktop/orchestrator",
+		"paths": [],
+		"tags": [],
+		"enabled": true
+	},
+	{
+		"name": "go_explain",
+		"rootPath": "/home/denis/Desktop/go_explain",
+		"paths": [],
+		"tags": [],
+		"enabled": true
+	}
+]

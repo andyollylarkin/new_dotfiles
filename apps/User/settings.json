@@ -1,5 +1,5 @@
 {
-  "workbench.colorTheme": "Ayu Mirage Bordered",
+  "workbench.colorTheme": "Dracula",
   "security.workspace.trust.untrustedFiles": "open",
   // VIM
   "vim.cursorStylePerMode.normal": "block",
@@ -100,9 +100,10 @@
   // EDITOR
   "editor.fontSize": 13,
   "editor.fontLigatures": true,
-  "editor.fontWeight": "500",
+  "editor.fontWeight": "450",
   "editor.minimap.enabled": false,
-  "editor.fontFamily": "'Droid Sans Mono', 'monospace', monospace",
+  // Fira Code settings https://github.com/tonsky/FiraCode/wiki/VS-Code-Instructions
+  "editor.fontFamily": "'Fira Code', 'monospace', monospace",
   "editor.suggest.showConstants": true,
   "editor.suggest.showSnippets": true,
   "editor.suggest.showConstructors": true,
@@ -112,6 +113,7 @@
   "editor.cursorStyle": "underline",
   "editor.formatOnSave": true,
   // GENERAL
+  "debug.console.wordWrap": true,
   /**
   Because my input type switch keys is: Alt + Shift.
   Switch input also trigger MenuBar
@@ -147,11 +149,18 @@
     "editor.formatOnSave": true,
     "editor.rulers": [
       120
-    ]
+    ],
+    "editor.wordWrap": "bounded",
+    "editor.wordWrapColumn": 160
   },
   "go.lintTool": "golangci-lint",
+  "go.lintFlags": [
+    "--fast"
+  ],
   "go.lintOnSave": "file",
   "[javascript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
-  }
+  },
+  "files.autoSave": "afterDelay",
+  "workbench.activityBar.visible": false
 }

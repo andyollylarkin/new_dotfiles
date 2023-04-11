@@ -1,0 +1,88 @@
+make all --dry-run --always-make --keep-going --print-directory
+make: Entering directory '/home/denis/Desktop/orchestrator'
+#go generate ./translations/translations.go
+make -C jobworker VERSION=feature/go-9/jobworker_agent_integration
+make[1]: Entering directory '/home/denis/Desktop/orchestrator/jobworker'
+make clean
+make[2]: Entering directory '/home/denis/Desktop/orchestrator/jobworker'
+rm -f jobworker
+make[2]: Leaving directory '/home/denis/Desktop/orchestrator/jobworker'
+CGO_ENABLED=0 GOOS=linux go build -ldflags "-w -s -X gitlab.mindsw.io/mind-migration/orchestrator/libs/common.MINDVER=feature/go-9/jobworker_agent_integration -X 'gitlab.mindsw.io/mind-migration/orchestrator/libs/common.BUILDTIME=1681235892'" -o jobworker -a
+make[1]: Leaving directory '/home/denis/Desktop/orchestrator/jobworker'
+make -C api VERSION=feature/go-9/jobworker_agent_integration
+make[1]: Entering directory '/home/denis/Desktop/orchestrator/api'
+ 
+make clean
+make[2]: Entering directory '/home/denis/Desktop/orchestrator/api'
+rm -f api
+make[2]: Leaving directory '/home/denis/Desktop/orchestrator/api'
+CGO_ENABLED=0 GOOS=linux go build -ldflags "-w -s -X gitlab.mindsw.io/mind-migration/orchestrator/libs/common.MINDVER=feature/go-9/jobworker_agent_integration -X 'gitlab.mindsw.io/mind-migration/orchestrator/libs/common.BUILDTIME=1681235892'" -o api -a
+./swaggerGenSpec.sh
+make[1]: Leaving directory '/home/denis/Desktop/orchestrator/api'
+make -C scheduler VERSION=feature/go-9/jobworker_agent_integration
+make[1]: Entering directory '/home/denis/Desktop/orchestrator/scheduler'
+CGO_ENABLED=0 GOOS=linux go build -ldflags "-w -s -X gitlab.mindsw.io/mind-migration/orchestrator/libs/common.MINDVER=feature/go-9/jobworker_agent_integration -X 'gitlab.mindsw.io/mind-migration/orchestrator/libs/common.BUILDTIME=1681235892'" -o "scheduler" -a
+make[1]: Leaving directory '/home/denis/Desktop/orchestrator/scheduler'
+make -C libs/patches VERSION=feature/go-9/jobworker_agent_integration
+make[1]: Entering directory '/home/denis/Desktop/orchestrator/libs/patches'
+make[1]: Nothing to be done for 'all'.
+make[1]: Leaving directory '/home/denis/Desktop/orchestrator/libs/patches'
+if test -d hostutils; \
+        then echo "HostUtils exists"; \
+        else git clone -b feature/go-9/jobworker_agent_integration --single-branch git@gitlab.mindsw.io:/mind-migration/hostutils.git; \
+        fi
+make -C hostutils
+make[1]: Entering directory '/home/denis/Desktop/orchestrator'
+make[1]: Leaving directory '/home/denis/Desktop/orchestrator'
+make -C ./libs/patches
+make[1]: Entering directory '/home/denis/Desktop/orchestrator/libs/patches'
+make[1]: Nothing to be done for 'all'.
+make[1]: Leaving directory '/home/denis/Desktop/orchestrator/libs/patches'
+# mkdir -p ""`pwd`/binaries"/etc/systemd/system"
+mkdir -p ""`pwd`/binaries"/share/docs"
+mkdir -p ""`pwd`/binaries"/etc"
+make -C api swaggerinstall INSTALLPREFIX=""`pwd`/binaries"/share/docs"
+ 
+make[1]: *** hostutils: No such file or directory.  Stop.
+make: *** [Makefile:40: buildhostutils] Error 2
+
+make[1]: Entering directory '/home/denis/Desktop/orchestrator/api'
+cp -r swagger.json /home/denis/Desktop/orchestrator/binaries/share/docs
+make[1]: Leaving directory '/home/denis/Desktop/orchestrator/api'
+cp -r docs/config.yml.example "`pwd`/binaries"/etc/config.yml.example
+cp -r docs/nginx.conf.example "`pwd`/binaries"/share/docs/nginx.conf.example
+# cp -r docs/services/* ""`pwd`/binaries"/etc/systemd/system"
+make -C libs/patches install
+make[1]: Entering directory '/home/denis/Desktop/orchestrator/libs/patches'
+make[1]: Nothing to be done for 'install'.
+make[1]: Leaving directory '/home/denis/Desktop/orchestrator/libs/patches'
+mkdir -p ""`pwd`/binaries"/bin"
+mkdir -p ""`pwd`/binaries"/etc"
+mkdir -p ""`pwd`/binaries"/share/drivers"
+mkdir -p ""`pwd`/binaries"/share/upload"
+mkdir -p ""`pwd`/binaries"/share/userscripts"
+cp -r share/* ""`pwd`/binaries"/share/"
+make -C api install INSTALLPREFIX=""`pwd`/binaries"/bin"
+make[1]: Entering directory '/home/denis/Desktop/orchestrator/api'
+cp -r api /home/denis/Desktop/orchestrator/binaries/bin
+make[1]: Leaving directory '/home/denis/Desktop/orchestrator/api'
+make -C jobworker install INSTALLPREFIX=""`pwd`/binaries"/bin"
+make[1]: Entering directory '/home/denis/Desktop/orchestrator/jobworker'
+cp -r jobworker /home/denis/Desktop/orchestrator/binaries/bin
+make[1]: Leaving directory '/home/denis/Desktop/orchestrator/jobworker'
+make -C scheduler install INSTALLPREFIX=""`pwd`/binaries"/bin"
+make[1]: Entering directory '/home/denis/Desktop/orchestrator/scheduler'
+cp -r "scheduler" /home/denis/Desktop/orchestrator/binaries/bin
+make[1]: Leaving directory '/home/denis/Desktop/orchestrator/scheduler'
+mkdir -p ""`pwd`/binaries"/bin"
+mkdir -p ""`pwd`/binaries"/hostutils"
+mkdir -p ""`pwd`/binaries"/etc"
+mkdir -p ""`pwd`/binaries"/share"
+make -C hostutils install INSTALLPREFIX=""`pwd`/binaries"/hostutils"
+make[1]: Entering directory '/home/denis/Desktop/orchestrator'
+make[1]: Leaving directory '/home/denis/Desktop/orchestrator'
+make: Leaving directory '/home/denis/Desktop/orchestrator'
+ 
+make[1]: *** hostutils: No such file or directory.  Stop.
+make: *** [Makefile:47: installhostutils] Error 2
+
