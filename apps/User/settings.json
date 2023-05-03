@@ -120,7 +120,7 @@
   **/
   "window.customMenuBarAltFocus": false, //
   "telemetry.telemetryLevel": "off",
-  "window.title": "DevHub - Denis Davydov",
+  "window.title": "DevHub - ${folderName}",
   "window.titleBarStyle": "custom", // Title bar will change color to match the color theme
   "window.closeWhenEmpty": false,
   "explorer.confirmDelete": false,
@@ -151,9 +151,15 @@
       120
     ],
     "editor.wordWrap": "bounded",
-    "editor.wordWrapColumn": 160
+    "editor.wordWrapColumn": 160,
+    "editor.codeActionsOnSave": {
+      "source.organizeImports": true
+    }
   },
   "go.lintTool": "golangci-lint",
+  "gopls": {
+    "ui.semanticTokens": true
+  },
   "go.lintFlags": [
     "--fast"
   ],
@@ -161,6 +167,5 @@
   "[javascript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "files.autoSave": "afterDelay",
-  "workbench.activityBar.visible": false
+  "files.autoSave": "afterDelay"
 }

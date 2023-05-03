@@ -6,7 +6,7 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Tue Apr 11 20:58:12 2023
+# Make data base, printed on Tue May  2 12:42:21 2023
 
 # Variables
 
@@ -81,7 +81,7 @@ LESSOPEN = | /usr/bin/lesspipe %s
 # automatic
 *D = $(patsubst %/,%,$(dir $*))
 # makefile (from 'Makefile', line 6)
-VERSION := feature/go-9/jobworker_agent_integration
+VERSION := rc-1.7.1
 # environment
 MFLAGS = -pqrR
 # environment
@@ -99,7 +99,7 @@ MAKEFILE_LIST := Makefile
 # automatic
 @F = $(notdir $@)
 # environment
-VSCODE_PID = 1508752
+VSCODE_PID = 10626
 # environment
 HISTIGNORE = &:[ ]*:exit:ls:bg:fg:history:clear
 # environment
@@ -107,7 +107,7 @@ XDG_SESSION_TYPE = x11
 # automatic
 ?D = $(patsubst %/,%,$(dir $?))
 # environment
-SESSION_MANAGER = local/workpc:@/tmp/.ICE-unix/2060,unix/workpc:/tmp/.ICE-unix/2060
+SESSION_MANAGER = local/workpc:@/tmp/.ICE-unix/2051,unix/workpc:/tmp/.ICE-unix/2051
 # automatic
 *F = $(notdir $*)
 # environment
@@ -135,7 +135,7 @@ SHLVL = 0
 # environment
 MAKELEVEL := 0
 # makefile (from 'Makefile', line 14)
-FRONTVERSION := feature/go-9/jobworker_agent_integration
+FRONTVERSION := rc-1.7.1
 # default
 MAKE = $(MAKE_COMMAND)
 # environment
@@ -149,7 +149,7 @@ LC_MONETARY = ru_RU.UTF-8
 # automatic
 ^F = $(notdir $^)
 # makefile (from 'Makefile', line 15)
-FRONTTAGSTR := -b feature/go-9/jobworker_agent_integration
+FRONTTAGSTR := -b rc-1.7.1
 # environment
 CINNAMON_VERSION = 5.4.8
 # environment
@@ -206,7 +206,7 @@ MAKE_VERSION := 4.3
 # environment
 LC_MEASUREMENT = ru_RU.UTF-8
 # environment
-GIO_LAUNCHED_DESKTOP_FILE_PID = 1508752
+GIO_LAUNCHED_DESKTOP_FILE_PID = 10626
 # environment
 PAGER = less
 # environment
@@ -242,7 +242,7 @@ GOPROXY = https://proxy.golang.org,direct
 # automatic
 <F = $(notdir $<)
 # makefile (from 'Makefile', line 7)
-TAGSTR := -b feature/go-9/jobworker_agent_integration
+TAGSTR := -b rc-1.7.1
 # default
 SUFFIXES := 
 # environment
@@ -279,7 +279,6 @@ installdocs:
 #  recipe to execute (from 'Makefile', line 69):
 	# mkdir -p "$(INSTALLPREFIX)/etc/systemd/system"
 	mkdir -p "$(INSTALLPREFIX)/share/docs"
- 
 	mkdir -p "$(INSTALLPREFIX)/etc"
 	$(MAKE) -C api swaggerinstall INSTALLPREFIX="$(INSTALLPREFIX)/share/docs"
 	cp -r docs/config.yml.example $(INSTALLPREFIX)/etc/config.yml.example
@@ -296,6 +295,7 @@ buildhostutils: hostutils-get
 translate:
 #  Implicit rule search has not been done.
 #  Implicit/static pattern stem: ''
+ 
 #  File does not exist.
 #  File has been updated.
 #  Needs to be updated (-q is set).
@@ -334,7 +334,7 @@ installhostutils:
 # Not a target:
 Makefile:
 #  Implicit rule search has been done.
-#  Last modified 2023-04-10 17:17:55.120026396
+#  Last modified 2023-04-18 09:34:56.76006165
 #  File has been updated.
 #  Successfully updated.
 
@@ -472,6 +472,6 @@ install: installdocs
 # strcache performance: lookups = 77 / hit rate = 44%
 # hash-table stats:
 # Load=43/8192=1%, Rehash=0, Collisions=0/77=0%
-# Finished Make data base on Tue Apr 11 20:58:12 2023
+# Finished Make data base on Tue May  2 12:42:21 2023
 
  
