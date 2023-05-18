@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+source ./install_funcs.sh
+
 CURR_DIR=$(pwd);
 BASH_INTERPRETER=$(which bash);
 
@@ -17,11 +19,11 @@ to_install=(
     "curl"
     "git"
     "fonts-powerline"
+    "powerline-fonts" #for rpm based systems
 );
 
-for app in ${to_install[@]}; do
-    sudo apt install -qqy $app &>/dev/null;
-done
+echo -e "\033[101mInstalling packages\033[0m"
+install_packages
 
 #install oh-my-bash
 if [ ! -d ${HOME}/.oh-my-bash ]; then
