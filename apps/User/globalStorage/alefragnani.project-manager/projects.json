@@ -12,5 +12,33 @@
 		"paths": [],
 		"tags": [],
 		"enabled": true
+	},
+	{
+		"name": "hostutils",
+		"rootPath": "/home/denis/Desktop/hostutils",
+		"paths": [],
+		"tags": [],
+		"enabled": true
+	},
+	{
+		"name": "mind-libs",
+		"rootPath": "/home/denis/Desktop/mind-libs",
+		"paths": [],
+		"tags": [],
+		"enabled": true
+	},
+	{
+		"name": "agent",
+		"rootPath": "/home/denis/Desktop/mind-agent",
+		"paths": [],
+		"tags": [],
+		"enabled": true
+	},
+	{
+		"name": "leetcode",
+		"rootPath": "/home/denis/Desktop/go-codewars",
+		"paths": [],
+		"tags": [],
+		"enabled": true
 	}
 ]

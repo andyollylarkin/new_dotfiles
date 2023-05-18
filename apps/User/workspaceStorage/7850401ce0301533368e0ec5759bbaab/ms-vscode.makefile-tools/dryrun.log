@@ -1,0 +1,100 @@
+make --dry-run --always-make --keep-going --print-directory
+make: Entering directory '/home/denis/Desktop/hostutils'
+make -C mind_discovery
+make[1]: Entering directory '/home/denis/Desktop/hostutils/mind_discovery'
+cp -r ../utils/sfdisk.static sfdisk.static
+CGO_ENABLED=0 GOOS=linux go build -ldflags '-w -s' -buildvcs=false -o "mind_discovery" -a
+make[1]: Leaving directory '/home/denis/Desktop/hostutils/mind_discovery'
+make -C mind_flow
+make[1]: Entering directory '/home/denis/Desktop/hostutils/mind_flow'
+CGO_ENABLED=0 GOOS=linux go build -ldflags '-w -s' -buildvcs=false -o "mind_flow" -a
+make[1]: Leaving directory '/home/denis/Desktop/hostutils/mind_flow'
+make -C mind_receiver
+make[1]: Entering directory '/home/denis/Desktop/hostutils/mind_receiver'
+CGO_ENABLED=0 GOOS=linux go build -ldflags '-w -s' -buildvcs=false -o "mind_receiver" -a
+make[1]: Leaving directory '/home/denis/Desktop/hostutils/mind_receiver'
+make -C mind_targetcheckout
+make[1]: Entering directory '/home/denis/Desktop/hostutils/mind_targetcheckout'
+CGO_ENABLED=0 GOOS=linux go build -ldflags '-w -s' -buildvcs=false -o "mind_targetcheckout" -a
+make[1]: Leaving directory '/home/denis/Desktop/hostutils/mind_targetcheckout'
+make -C mind_targetdiskprep
+make[1]: Entering directory '/home/denis/Desktop/hostutils/mind_targetdiskprep'
+cp ../utils/sfdisk.static sfdisk.static
+CGO_ENABLED=0 GOOS=linux go build -ldflags '-w -s' -buildvcs=false -o "mind_targetdiskprep" -a
+make[1]: Leaving directory '/home/denis/Desktop/hostutils/mind_targetdiskprep'
+make -C mind_targetprep
+make[1]: Entering directory '/home/denis/Desktop/hostutils/mind_targetprep'
+CGO_ENABLED=0 GOOS=linux go build -ldflags '-w -s' -buildvcs=false -o "mind_targetprep" -a
+make[1]: Leaving directory '/home/denis/Desktop/hostutils/mind_targetprep'
+make -C mind_reboot
+make[1]: Entering directory '/home/denis/Desktop/hostutils/mind_reboot'
+CGO_ENABLED=0 GOOS=linux go build -ldflags '-w -s' -o "mind_reboot" -a
+make[1]: Leaving directory '/home/denis/Desktop/hostutils/mind_reboot'
+make -C mind_shutdown
+make[1]: Entering directory '/home/denis/Desktop/hostutils/mind_shutdown'
+CGO_ENABLED=0 GOOS=linux go build -ldflags '-w -s' -buildvcs=false -o "mind_shutdown" -a
+make[1]: Leaving directory '/home/denis/Desktop/hostutils/mind_shutdown'
+make -C mind_agentsetup
+make[1]: Entering directory '/home/denis/Desktop/hostutils/mind_agentsetup'
+CGO_ENABLED=0 GOOS=linux go build -ldflags '-w -s' -buildvcs=false -o "mind_agentsetup" -a
+make[1]: Leaving directory '/home/denis/Desktop/hostutils/mind_agentsetup'
+make -C mind_migration
+make[1]: Entering directory '/home/denis/Desktop/hostutils/mind_migration'
+CGO_ENABLED=0 GOOS=linux go build -ldflags '-w -s' -buildvcs=false -o "mind_migration" -a
+make[1]: Leaving directory '/home/denis/Desktop/hostutils/mind_migration'
+make -C windows/
+make[1]: Entering directory '/home/denis/Desktop/hostutils/windows'
+make -C mind_discovery
+make[2]: Entering directory '/home/denis/Desktop/hostutils/windows/mind_discovery'
+CGO_ENABLED=0 GOOS=windows go build -ldflags '-w -s' -buildvcs=false -o "mind_discovery.exe" -a
+make[2]: Leaving directory '/home/denis/Desktop/hostutils/windows/mind_discovery'
+make -C mind_targetdiskprep
+make[2]: Entering directory '/home/denis/Desktop/hostutils/windows/mind_targetdiskprep'
+CGO_ENABLED=0 GOOS=windows go build -ldflags '-w -s' -buildvcs=false -o "mind_targetdiskprep.exe" -a
+make[2]: Leaving directory '/home/denis/Desktop/hostutils/windows/mind_targetdiskprep'
+make -C mind_targetprep
+make[2]: Entering directory '/home/denis/Desktop/hostutils/windows/mind_targetprep'
+CGO_ENABLED=0 GOOS=windows go build -ldflags '-w -s' -buildvcs=false -o "mind_targetprep.exe" -a
+make[2]: Leaving directory '/home/denis/Desktop/hostutils/windows/mind_targetprep'
+make -C mind_reboot
+make[2]: Entering directory '/home/denis/Desktop/hostutils/windows/mind_reboot'
+CGO_ENABLED=0 GOOS=windows go build -ldflags '-w -s' -buildvcs=false -o "mind_reboot.exe" -a
+make[2]: Leaving directory '/home/denis/Desktop/hostutils/windows/mind_reboot'
+make -C mind_receiver
+make[2]: Entering directory '/home/denis/Desktop/hostutils/windows/mind_receiver'
+cp -r ../../utils/windows/dd.exe dd.exe
+CGO_ENABLED=0 GOOS=windows go build -ldflags '-w -s' -buildvcs=false -o "mind_receiver.exe" -a
+make[2]: Leaving directory '/home/denis/Desktop/hostutils/windows/mind_receiver'
+make -C mind_flowreceiver
+make[2]: Entering directory '/home/denis/Desktop/hostutils/windows/mind_flowreceiver'
+CGO_ENABLED=0 GOOS=windows go build -ldflags '-w -s' -buildvcs=false -o "mind_flowreceiver.exe" -a
+make[2]: Leaving directory '/home/denis/Desktop/hostutils/windows/mind_flowreceiver'
+make -C mind_transmitter
+make[2]: Entering directory '/home/denis/Desktop/hostutils/windows/mind_transmitter'
+cp -r ../../utils/windows/dd.exe dd.exe
+CGO_ENABLED=0 GOOS=windows go build -ldflags '-w -s' -buildvcs=false -o "mind_transmitter.exe" -a
+make[2]: Leaving directory '/home/denis/Desktop/hostutils/windows/mind_transmitter'
+make -C mind_flowtransmitter
+make[2]: Entering directory '/home/denis/Desktop/hostutils/windows/mind_flowtransmitter'
+CGO_ENABLED=0 GOOS=windows go build -ldflags '-w -s' -buildvcs=false -o "mind_flowtransmitter.exe" -a
+make[2]: Leaving directory '/home/denis/Desktop/hostutils/windows/mind_flowtransmitter'
+make -C mind_targetcheckout
+ 
+make[2]: Entering directory '/home/denis/Desktop/hostutils/windows/mind_targetcheckout'
+CGO_ENABLED=0 GOOS=windows go build -ldflags '-w -s' -buildvcs=false -o "mind_targetcheckout.exe" -a
+make[2]: Leaving directory '/home/denis/Desktop/hostutils/windows/mind_targetcheckout'
+make -C mind_postinstall
+make[2]: Entering directory '/home/denis/Desktop/hostutils/windows/mind_postinstall'
+CGO_ENABLED=0 GOOS=windows go build -ldflags '-w -s' -buildvcs=false -o "mind_postinstall.exe" -a
+make[2]: Leaving directory '/home/denis/Desktop/hostutils/windows/mind_postinstall'
+make -C mind_shutdown
+make[2]: Entering directory '/home/denis/Desktop/hostutils/windows/mind_shutdown'
+CGO_ENABLED=0 GOOS=windows go build -ldflags '-w -s' -buildvcs=false -o "mind_shutdown.exe" -a
+make[2]: Leaving directory '/home/denis/Desktop/hostutils/windows/mind_shutdown'
+make -C mind_agentsetup
+make[2]: Entering directory '/home/denis/Desktop/hostutils/windows/mind_agentsetup'
+CGO_ENABLED=0 GOOS=windows go build -ldflags '-w -s' -buildvcs=false -o "mind_agentsetup.exe" -a
+make[2]: Leaving directory '/home/denis/Desktop/hostutils/windows/mind_agentsetup'
+make[1]: Leaving directory '/home/denis/Desktop/hostutils/windows'
+make: Leaving directory '/home/denis/Desktop/hostutils'
+ 
