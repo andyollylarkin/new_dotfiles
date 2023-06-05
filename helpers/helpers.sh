@@ -5,8 +5,13 @@ get_pass() {
     xclip --help 2>/dev/null;
     local exist_status=$?;
     if [ $exist_status == 127 ]; then
+        os_type=$(get_os_type);
         echo -e "\e[41mINSTALLING XCLIP\e[0m\n"
-        sudo apt-get install -qqy xclip;
+        if [[ $os_type == "deb" ]]; then
+            sudo apt-get install -qqy xclip;
+        elif [[ $os_type == "rpm" ]]; then
+            sudo dnf install -y xclip;
+        fi
     fi
     echo -n ${1}|md5sum|grep -Eo '([A-Z]|[a-z]|[0-9])+'|tr -d "\n"|xclip -selection clipboard;
 }
@@ -25,6 +30,16 @@ function remove(){
         mkdir $rmd;
     fi
     mv -f ${params} ${rmd} 1>/dev/null;
+}
+
+get_os_type(){
+    which dpkg &>/dev/null;
+    e_code=$?
+    if [[ $e_code == 1 ]]; then
+        echo "rpm";
+    else
+        echo "deb";
+    fi
 }
 
 
