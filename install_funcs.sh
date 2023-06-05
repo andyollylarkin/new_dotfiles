@@ -6,7 +6,7 @@ TYPE_DEB=229
 detect_os(){
 	which dpkg 2>/dev/null;
 	exit_code=$?
-	if [[ exit_code == 1 ]]; then
+	if [[ $exit_code == 1 ]]; then
 		return $TYPE_RPM
 	else
 		return $TYPE_DEB
@@ -16,7 +16,7 @@ detect_os(){
 install_packages(){
 	detect_os
 	os_type=$?
-	if [[ os_type == TYPE_DEB ]]; then
+	if [[ $os_type == $TYPE_DEB ]]; then
 		install_deb $1
 	else
 		install_rmp $1
@@ -36,4 +36,9 @@ install_rmp(){
 		echo -e "\e[1minstall app\e[0m " $app
 	    sudo dnf install -y $app;
 	done
+}
+
+get_home(){
+	home=$(getent passwd $1|cut -d: -f6);
+	echo $home;
 }

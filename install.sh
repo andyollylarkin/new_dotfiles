@@ -1,15 +1,17 @@
 #!/usr/bin/env bash
 
+
+user=$(whoami)
+if [[ $user != 'root' ]]; then
+	echo -e "\033[101mPlease use with sudo!\033[0m"
+	exit 1;
+fi
+
 source ./install_funcs.sh
 
 CURR_DIR=$(pwd);
 BASH_INTERPRETER=$(which bash);
-
-while true; do
-    sudo -v;
-    sleep 300;
-    kill -0 "$$" || exit;
-done 2>/dev/null &
+HOME=$(get_home $SUDO_UID);
 
 to_install=(
     "terminator"
@@ -23,7 +25,7 @@ to_install=(
 );
 
 echo -e "\033[101mInstalling packages\033[0m"
-install_packages
+#install_packages
 
 #install oh-my-bash
 if [ ! -d ${HOME}/.oh-my-bash ]; then
@@ -53,7 +55,7 @@ echo "Install rcfiles";
 rcfiles=($(ls -a|grep -P '^(?!\.git)\.\w+'));
 for file in ${rcfiles[@]}; do
     if [ ! -f ${HOME}/${file} ]; then
-        echo "Install ${file}";
+        echo "Install ${file}. Dst path: ${HOME}/${file}";
         ln -s $CURR_DIR/${file} ${HOME}/${file};
     fi
 done
@@ -63,5 +65,3 @@ unset rm_rc_files;
 unset to_install;
 unset CURR_DIR;
 unset BASH_INTERPRETER;
-kill -9 %1;
-
