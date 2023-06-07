@@ -103,7 +103,7 @@
   "editor.fontWeight": "450",
   "editor.minimap.enabled": false,
   // Fira Code settings https://github.com/tonsky/FiraCode/wiki/VS-Code-Instructions
-  "editor.fontFamily": "'Fira Code', 'monospace', monospace",
+  "editor.fontFamily": "Fira Code",
   "editor.suggest.showConstants": true,
   "editor.suggest.showSnippets": true,
   "editor.suggest.showConstructors": true,
@@ -133,17 +133,9 @@
   "gitlens.defaultDateFormat": "YYYY-MM-DD",
   "gitlens.defaultDateShortFormat": null,
   "editor.formatOnSaveMode": "file",
-  //   CODE QUALITY TOOLS
-  // "eslint.enable": true,
-  // "prettier.useEditorConfig": true,
-  // "editor.defaultFormatter": "esbenp.prettier-vscode",
   "[cpp]": {
     "editor.defaultFormatter": "ms-vscode.cpptools"
   },
-  // "[python]": {
-  //   "editor.defaultFormatter": "ms-python.python",
-  //   "editor.rulers": [120]
-  // },
   "[go]": {
     "editor.defaultFormatter": "golang.go",
     "editor.formatOnSave": true,
@@ -161,7 +153,8 @@
     "ui.semanticTokens": true
   },
   "go.lintFlags": [
-    "--fast"
+    "--fast",
+    "--enable-all"
   ],
   "go.lintOnSave": "file",
   "[javascript]": {

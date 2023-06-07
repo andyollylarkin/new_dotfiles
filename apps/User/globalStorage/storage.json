@@ -8,17 +8,13 @@
             "file:///home/denis/Desktop/docker-apprise": "__default__profile__",
             "file:///home/denis/Desktop/classic_ds_and_algos": "__default__profile__",
             "file:///home/denis/Desktop/go-codewars": "__default__profile__",
-            "file:///home/denis/Desktop/orchestrator": "__default__profile__",
             "file:///home/denis/Desktop/mind-libs": "__default__profile__",
             "file:///home/denis/Desktop/mind-agent": "__default__profile__",
-            "file:///home/denis/Desktop/hostutils": "__default__profile__"
+            "file:///home/denis/Desktop/hostutils": "__default__profile__",
+            "file:///home/denis/Desktop/RoadToBT": "__default__profile__",
+            "file:///home/denis/Desktop/orchestrator": "__default__profile__"
         },
-        "emptyWindows": {
-            "1682930519994": "__default__profile__",
-            "1683012720389": "__default__profile__",
-            "1683020753738": "__default__profile__",
-            "1683028350597": "__default__profile__"
-        }
+        "emptyWindows": {}
     },
     "profileAssociationsMigration": true,
     "telemetry.machineId": "ffbf33a8debe12e5f60f3d9461ffdc65b4fdd8bbd75edafc207fb36471ee9d06",
@@ -26,47 +22,13 @@
         "workspaces": [],
         "folders": [
             {
-                "folderUri": "file:///home/denis/Desktop/go-codewars"
+                "folderUri": "file:///home/denis/Desktop/RoadToBT"
             },
             {
                 "folderUri": "file:///home/denis/Desktop/orchestrator"
-            },
-            {
-                "folderUri": "file:///home/denis/Desktop/mind-libs"
-            },
-            {
-                "folderUri": "file:///home/denis/Desktop/btree"
-            },
-            {
-                "folderUri": "file:///home/denis/Desktop/classic_ds_and_algos"
-            },
-            {
-                "folderUri": "file:///home/denis/Desktop/go_explain"
-            },
-            {
-                "folderUri": "file:///home/denis/Desktop/docker-apprise"
-            },
-            {
-                "folderUri": "file:///home/denis/Desktop/hostutils"
-            },
-            {
-                "folderUri": "file:///home/denis/Desktop/mind-agent"
             }
         ],
-        "emptyWindows": [
-            {
-                "backupFolder": "1682930519994"
-            },
-            {
-                "backupFolder": "1683012720389"
-            },
-            {
-                "backupFolder": "1683020753738"
-            },
-            {
-                "backupFolder": "1683028350597"
-            }
-        ]
+        "emptyWindows": []
     },
     "lastKnownMenubarData": {
         "menus": {
@@ -1710,50 +1672,16 @@
     },
     "windowsState": {
         "lastActiveWindow": {
-            "folder": "file:///home/denis/Desktop/mind-agent",
-            "backupPath": "/home/denis/.config/Code/Backups/714a9c4d0865c731d6b482b4491ffb4b",
+            "folder": "file:///home/denis/Desktop/orchestrator",
+            "backupPath": "/home/denis/.config/Code/Backups/4db35bd80bc0b8c63e76fc9523fe2695",
             "uiState": {
                 "mode": 0,
-                "x": 0,
+                "x": 121,
                 "y": 0,
                 "width": 1717,
                 "height": 965
             }
         },
-        "openedWindows": [
-            {
-                "folder": "file:///home/denis/Desktop/orchestrator",
-                "backupPath": "/home/denis/.config/Code/Backups/4db35bd80bc0b8c63e76fc9523fe2695",
-                "uiState": {
-                    "mode": 0,
-                    "x": -209,
-                    "y": 0,
-                    "width": 1717,
-                    "height": 965
-                }
-            },
-            {
-                "folder": "file:///home/denis/Desktop/mind-agent",
-                "backupPath": "/home/denis/.config/Code/Backups/714a9c4d0865c731d6b482b4491ffb4b",
-                "uiState": {
-                    "mode": 0,
-                    "x": 0,
-                    "y": 0,
-                    "width": 1717,
-                    "height": 965
-                }
-            },
-            {
-                "folder": "file:///home/denis/Desktop/hostutils",
-                "backupPath": "/home/denis/.config/Code/Backups/fe8da61037ab94b1c4462e1065f5cc26",
-                "uiState": {
-                    "mode": 0,
-                    "x": 1920,
-                    "y": 0,
-                    "width": 1717,
-                    "height": 930
-                }
-            }
-        ]
+        "openedWindows": []
     }
 }

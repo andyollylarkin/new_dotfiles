@@ -35,10 +35,12 @@
 		"enabled": true
 	},
 	{
-		"name": "leetcode",
-		"rootPath": "/home/denis/Desktop/go-codewars",
+		"name": "road-to-bt",
+		"rootPath": "/home/denis/Desktop/RoadToBT",
 		"paths": [],
-		"tags": [],
+		"tags": [
+			"home"
+		],
 		"enabled": true
 	}
 ]

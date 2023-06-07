@@ -15,6 +15,7 @@ HOME=$(get_home $SUDO_UID);
 
 to_install=(
     "terminator"
+    "htop"
     "mc"
     "vim"
     "keepassxc"

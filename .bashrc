@@ -122,7 +122,7 @@ fi
 
 
 #-------EXPORTS-----------
-export PATH="$PATH:/usr/local/go/bin:$GOPATH/bin"
+export PATH="$GOPATH/bin:$PATH:/usr/local/bin:/usr/local/go/bin"
 export GOPATH=$(go env GOPATH);
 
 #------USER DEFINED------
