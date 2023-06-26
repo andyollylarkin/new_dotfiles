@@ -20,6 +20,14 @@
 			"}"
 		]
 	},
+	"Define new method": {
+		"prefix": "method",
+		"body": [
+			"func ($1 *$2) $3($4) $5 {",
+			"\t$6",
+			"}"
+		]
+	},
 	"Multiple constansts": {
 		"prefix": "consts",
 		"body": [

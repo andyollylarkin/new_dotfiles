@@ -107,17 +107,32 @@
   "editor.suggest.showConstants": true,
   "editor.suggest.showSnippets": true,
   "editor.suggest.showConstructors": true,
+  "editor.suggest.showFolders": true,
   "editor.insertSpaces": false,
   "editor.acceptSuggestionOnEnter": "smart",
   "editor.autoSurround": "brackets",
   "editor.cursorStyle": "underline",
   "editor.formatOnSave": true,
+  // SUGGEST
+  "editor.quickSuggestionsDelay": 1000,
+  "editor.quickSuggestions": {
+    "other": "on",
+    "comments": "off",
+    "strings": "off"
+  },
   // GENERAL
   "debug.console.wordWrap": true,
   /**
   Because my input type switch keys is: Alt + Shift.
   Switch input also trigger MenuBar
   **/
+  // TODO HIGHLIGHT
+  "todohighlight.isCaseSensitive": true,
+  "todohighlight.keywords": [
+    "TODO",
+    "REFACTORING",
+    "FIXME"
+  ],
   "window.customMenuBarAltFocus": false, //
   "telemetry.telemetryLevel": "off",
   "window.title": "DevHub - ${folderName}",
@@ -139,6 +154,9 @@
   "[go]": {
     "editor.defaultFormatter": "golang.go",
     "editor.formatOnSave": true,
+    "editor.quickSuggestions": {
+      "strings": "on"
+    },
     "editor.rulers": [
       120
     ],
@@ -160,5 +178,6 @@
   "[javascript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "files.autoSave": "afterDelay"
+  "files.autoSave": "afterDelay",
+  "todohighlight.isEnable": true
 }

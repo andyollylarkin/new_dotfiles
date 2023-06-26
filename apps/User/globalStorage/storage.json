@@ -8,13 +8,20 @@
             "file:///home/denis/Desktop/docker-apprise": "__default__profile__",
             "file:///home/denis/Desktop/classic_ds_and_algos": "__default__profile__",
             "file:///home/denis/Desktop/go-codewars": "__default__profile__",
-            "file:///home/denis/Desktop/mind-libs": "__default__profile__",
             "file:///home/denis/Desktop/mind-agent": "__default__profile__",
-            "file:///home/denis/Desktop/hostutils": "__default__profile__",
+            "file:///home/denis/Desktop/ansible_proxmox": "__default__profile__",
+            "file:///home/denis/Desktop/winutils": "__default__profile__",
+            "file:///home/denis/Desktop/mind-libs": "__default__profile__",
+            "file:///home/denis/Desktop/fiber_ratelimit": "__default__profile__",
+            "file:///home/denis/Desktop/gofiber_ratelimit": "__default__profile__",
+            "file:///home/denis/Desktop/last-wish": "__default__profile__",
             "file:///home/denis/Desktop/RoadToBT": "__default__profile__",
-            "file:///home/denis/Desktop/orchestrator": "__default__profile__"
+            "file:///home/denis/Desktop/orchestrator": "__default__profile__",
+            "file:///home/denis/Desktop/hostutils": "__default__profile__"
         },
-        "emptyWindows": {}
+        "emptyWindows": {
+            "1687770745505": "__default__profile__"
+        }
     },
     "profileAssociationsMigration": true,
     "telemetry.machineId": "ffbf33a8debe12e5f60f3d9461ffdc65b4fdd8bbd75edafc207fb36471ee9d06",
@@ -22,13 +29,29 @@
         "workspaces": [],
         "folders": [
             {
+                "folderUri": "file:///home/denis/Desktop/orchestrator"
+            },
+            {
                 "folderUri": "file:///home/denis/Desktop/RoadToBT"
             },
             {
-                "folderUri": "file:///home/denis/Desktop/orchestrator"
+                "folderUri": "file:///home/denis/Desktop/hostutils"
+            },
+            {
+                "folderUri": "file:///home/denis/Desktop/fiber_ratelimit"
+            },
+            {
+                "folderUri": "file:///home/denis/Desktop/gofiber_ratelimit"
+            },
+            {
+                "folderUri": "file:///home/denis/Desktop/last-wish"
             }
         ],
-        "emptyWindows": []
+        "emptyWindows": [
+            {
+                "backupFolder": "1687770745505"
+            }
+        ]
     },
     "lastKnownMenubarData": {
         "menus": {
@@ -1665,7 +1688,7 @@
             "editorPartMinWidth": 220,
             "titleBarHeight": 30,
             "activityBarWidth": 48,
-            "sideBarWidth": 564,
+            "sideBarWidth": 448,
             "statusBarHeight": 22,
             "windowBorder": false
         }
@@ -1676,10 +1699,10 @@
             "backupPath": "/home/denis/.config/Code/Backups/4db35bd80bc0b8c63e76fc9523fe2695",
             "uiState": {
                 "mode": 0,
-                "x": 121,
-                "y": 0,
-                "width": 1717,
-                "height": 965
+                "x": 2151,
+                "y": 32,
+                "width": 1024,
+                "height": 768
             }
         },
         "openedWindows": []
