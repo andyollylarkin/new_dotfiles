@@ -8,19 +8,24 @@
             "file:///home/denis/Desktop/docker-apprise": "__default__profile__",
             "file:///home/denis/Desktop/classic_ds_and_algos": "__default__profile__",
             "file:///home/denis/Desktop/go-codewars": "__default__profile__",
-            "file:///home/denis/Desktop/mind-agent": "__default__profile__",
             "file:///home/denis/Desktop/ansible_proxmox": "__default__profile__",
-            "file:///home/denis/Desktop/winutils": "__default__profile__",
             "file:///home/denis/Desktop/mind-libs": "__default__profile__",
             "file:///home/denis/Desktop/fiber_ratelimit": "__default__profile__",
-            "file:///home/denis/Desktop/gofiber_ratelimit": "__default__profile__",
             "file:///home/denis/Desktop/last-wish": "__default__profile__",
+            "file:///home/denis/Desktop/casbin_go_test": "__default__profile__",
+            "file:///home/denis/Desktop/libp2ptest": "__default__profile__",
+            "file:///home/denis/Desktop/example_prometheus": "__default__profile__",
+            "file:///home/denis/Desktop/winutils": "__default__profile__",
+            "file:///home/denis/Desktop/gofiber_ratelimit": "__default__profile__",
             "file:///home/denis/Desktop/RoadToBT": "__default__profile__",
+            "file:///home/denis/Desktop/greg-iia": "__default__profile__",
+            "file:///home/denis/Desktop/mind-agent": "__default__profile__",
+            "file:///home/denis/Desktop/hostutils": "__default__profile__",
             "file:///home/denis/Desktop/orchestrator": "__default__profile__",
-            "file:///home/denis/Desktop/hostutils": "__default__profile__"
+            "file:///home/denis/Desktop/golibtest": "__default__profile__"
         },
         "emptyWindows": {
-            "1687770745505": "__default__profile__"
+            "1689103932315": "__default__profile__"
         }
     },
     "profileAssociationsMigration": true,
@@ -29,27 +34,18 @@
         "workspaces": [],
         "folders": [
             {
-                "folderUri": "file:///home/denis/Desktop/orchestrator"
-            },
-            {
-                "folderUri": "file:///home/denis/Desktop/RoadToBT"
-            },
-            {
                 "folderUri": "file:///home/denis/Desktop/hostutils"
             },
             {
-                "folderUri": "file:///home/denis/Desktop/fiber_ratelimit"
+                "folderUri": "file:///home/denis/Desktop/orchestrator"
             },
             {
-                "folderUri": "file:///home/denis/Desktop/gofiber_ratelimit"
-            },
-            {
-                "folderUri": "file:///home/denis/Desktop/last-wish"
+                "folderUri": "file:///home/denis/Desktop/golibtest"
             }
         ],
         "emptyWindows": [
             {
-                "backupFolder": "1687770745505"
+                "backupFolder": "1689103932315"
             }
         ]
     },
@@ -1688,7 +1684,7 @@
             "editorPartMinWidth": 220,
             "titleBarHeight": 30,
             "activityBarWidth": 48,
-            "sideBarWidth": 448,
+            "sideBarWidth": 455,
             "statusBarHeight": 22,
             "windowBorder": false
         }
@@ -1699,12 +1695,35 @@
             "backupPath": "/home/denis/.config/Code/Backups/4db35bd80bc0b8c63e76fc9523fe2695",
             "uiState": {
                 "mode": 0,
-                "x": 2151,
-                "y": 32,
-                "width": 1024,
-                "height": 768
+                "x": 0,
+                "y": 0,
+                "width": 1920,
+                "height": 1080
             }
         },
-        "openedWindows": []
+        "openedWindows": [
+            {
+                "folder": "file:///home/denis/Desktop/hostutils",
+                "backupPath": "/home/denis/.config/Code/Backups/fe8da61037ab94b1c4462e1065f5cc26",
+                "uiState": {
+                    "mode": 0,
+                    "x": 0,
+                    "y": 0,
+                    "width": 1920,
+                    "height": 1080
+                }
+            },
+            {
+                "folder": "file:///home/denis/Desktop/orchestrator",
+                "backupPath": "/home/denis/.config/Code/Backups/4db35bd80bc0b8c63e76fc9523fe2695",
+                "uiState": {
+                    "mode": 0,
+                    "x": 0,
+                    "y": 0,
+                    "width": 1920,
+                    "height": 1080
+                }
+            }
+        ]
     }
 }
