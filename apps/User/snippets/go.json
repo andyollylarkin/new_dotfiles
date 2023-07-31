@@ -43,5 +43,14 @@
 			"    $1",
 			")"
 		]
+	},
+	"Select construction": {
+		"prefix": "select",
+		"body": [
+			"select {",
+			"case $1:",
+			"\t$2",
+			"}"
+		]
 	}
 }
