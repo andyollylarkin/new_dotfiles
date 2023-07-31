@@ -122,8 +122,8 @@ fi
 
 
 #-------EXPORTS-----------
-export PATH="$GOPATH/bin:$PATH:/usr/local/bin:/usr/local/go/bin"
 export GOPATH=$(go env GOPATH);
+export PATH="$GOPATH/bin:$PATH:/usr/local/bin:/usr/local/go/bin"
 
 #------USER DEFINED------
 shopt -s extglob;
