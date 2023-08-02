@@ -136,3 +136,5 @@ done
 for sourced in ~/dotenv/helpers/*; do
     source $sourced;
 done
+
+set -o pipefail
