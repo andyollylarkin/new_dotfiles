@@ -1,0 +1,432 @@
+make all --print-data-base --no-builtin-variables --no-builtin-rules --question
+make: *** No rule to make target 'all'.  Stop.
+
+# GNU Make 4.4
+# Built for x86_64-redhat-linux-gnu
+# Copyright (C) 1988-2022 Free Software Foundation, Inc.
+# License GPLv3+: GNU GPL version 3 or later <https://gnu.org/licenses/gpl.html>
+# This is free software: you are free to change and redistribute it.
+# There is NO WARRANTY, to the extent permitted by law.
+
+# Make data base, printed on Mon Aug 14 10:32:16 2023
+
+# Variables
+
+# environment
+GDK_BACKEND = x11
+# environment
+LC_ALL = C
+# environment
+NO_AT_BRIDGE = 1
+# environment
+OSH = /home/denis/.oh-my-bash
+# environment
+TERMINATOR_DBUS_NAME = net.tenshu.Terminator25ef4b219e3b005583550f2b0f9f990c3
+# makefile (from 'Makefile', line 3)
+GO_BUILD_SERVICE_FLAGS := -ldflags "-w -s -linkmode 'external' -extldflags '-static'" -buildvcs=false -o ./cmd/windows/mind_agent_service.exe ./cmd/windows/mind_agent_service.go
+# environment
+VSCODE_CRASH_REPORTER_PROCESS_TYPE = extensionHost
+# environment
+VSCODE_CWD = /home/denis/Desktop
+# environment
+TERMINATOR_UUID = urn:uuid:f52f502f-ec40-4445-9ced-a280cf018905
+# environment
+GDM_LANG = en_US.UTF-8
+# default
+MAKE_COMMAND := make
+# environment
+GOPATH = /home/denis/go
+# automatic
+@D = $(patsubst %/,%,$(dir $@))
+# environment
+VSCODE_HANDLES_UNCAUGHT_ERRORS = true
+# default
+.VARIABLES := 
+# environment
+PWD = /home/denis/Desktop/mind-agent
+# automatic
+%D = $(patsubst %/,%,$(dir $%))
+# environment
+HOSTNAME = fedora
+# environment
+LSCOLORS = Gxfxcxdxdxegedabagacad
+# environment
+MAIL = /var/spool/mail/denis
+# environment
+STEAM_FRAME_FORCE_CLOSE = 1
+# environment
+XDG_DATA_DIRS = /home/denis/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share/:/usr/share/
+# environment
+OLDPWD = /home/denis
+# automatic
+^D = $(patsubst %/,%,$(dir $^))
+# automatic
+%F = $(notdir $%)
+# environment
+VSCODE_CODE_CACHE_PATH = /home/denis/.config/Code/CachedData/b3e4e68a0bc097f0ae7907b217c1119af9e03435
+# environment
+LANG = C
+# environment
+XAUTHORITY = /run/user/1000/.mutter-Xwaylandauth.0HKJ91
+# default
+.LOADED := 
+# default
+.INCLUDE_DIRS := /usr/local/include /usr/include
+# makefile
+MAKEFLAGS = pqrR
+# environment
+TERMINATOR_DBUS_PATH = /net/tenshu/Terminator2
+# makefile
+CURDIR := /home/denis/Desktop/mind-agent
+# environment
+LESSOPEN = ||/usr/bin/lesspipe.sh %s
+# automatic
+*D = $(patsubst %/,%,$(dir $*))
+# environment
+MFLAGS = -pqrR
+# environment
+SSH_AUTH_SOCK = /run/user/1000/keyring/ssh
+# default
+.SHELLFLAGS := -c
+# environment
+WAYLAND_DISPLAY = wayland-0
+# automatic
++D = $(patsubst %/,%,$(dir $+))
+# environment
+XDG_SESSION_DESKTOP = gnome
+# makefile (from 'Makefile', line 1)
+MAKEFILE_LIST := Makefile
+# automatic
+@F = $(notdir $@)
+# environment
+VSCODE_PID = 2100405
+# environment
+HISTIGNORE = exit:ls:bg:fg:history:clear
+# environment
+SDL_VIDEO_MINIMIZE_ON_FOCUS_LOSS = 0
+# environment
+XDG_SESSION_TYPE = wayland
+# automatic
+?D = $(patsubst %/,%,$(dir $?))
+# environment
+SESSION_MANAGER = local/unix:@/tmp/.ICE-unix/2326,unix/unix:/tmp/.ICE-unix/2326
+# automatic
+*F = $(notdir $*)
+# environment
+CHROME_DESKTOP = code-url-handler.desktop
+# environment
+DBUS_SESSION_BUS_ADDRESS = unix:path=/run/user/1000/bus
+# automatic
+<D = $(patsubst %/,%,$(dir $<))
+# makefile (from 'Makefile', line 2)
+GO_BUILD_FLAGS := -ldflags "-w -s -linkmode 'external' -extldflags '-static'" -buildvcs=false -o ./cmd/windows/mind_agent.exe ./cmd/main.go
+# environment
+VSCODE_NLS_CONFIG = {"locale":"en-us","osLocale":"en-us","availableLanguages":{},"_languagePackSupport":true}
+# default
+MAKE_HOST := x86_64-redhat-linux-gnu
+# makefile
+SHELL = /bin/sh
+# default
+MAKECMDGOALS := all
+# environment
+XMODIFIERS = @im=ibus
+# environment
+SHLVL = 2
+# environment
+MAKELEVEL := 0
+# default
+MAKE = $(MAKE_COMMAND)
+# environment
+PATH = /home/denis/go/bin:/usr/local/bin:/usr/local/sbin:/usr/bin:/usr/sbin:/usr/local/bin:/usr/local/go/bin
+# default
+MAKEFILES := 
+# automatic
+^F = $(notdir $^)
+# environment
+INVOCATION_ID = 24b2f702a6224d92a817937eb98bf904
+# environment
+USERNAME = denis
+# environment
+GNOME_SETUP_DISPLAY = :1
+# automatic
+?F = $(notdir $?)
+# environment
+XDG_CURRENT_DESKTOP = GNOME
+# environment
+LS_COLORS = rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.swp=00;90:*.tmp=00;90:*.dpkg-dist=00;90:*.dpkg-old=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:
+# automatic
++F = $(notdir $+)
+# environment
+LESS = -R
+# environment
+DESKTOP_SESSION = gnome
+# environment
+ORIGINAL_XDG_CURRENT_DESKTOP = GNOME
+# 'override' directive
+GNUMAKEFLAGS := 
+# environment
+LOGNAME = denis
+# makefile
+.DEFAULT_GOAL := build-all
+# environment
+SYSTEMD_EXEC_PID = 2705
+# environment
+HISTCONTROL = erasedups:ignoreboth
+# environment
+EDITOR = vim
+# environment
+DISPLAY = :0
+# environment
+USER = denis
+# default
+MAKE_VERSION := 4.4
+# environment
+MANAGERPID = 2182
+# environment
+DEBUGINFOD_URLS = https://debuginfod.fedoraproject.org/ 
+# environment
+GIO_LAUNCHED_DESKTOP_FILE_PID = 2368257
+# environment
+PAGER = less
+# environment
+_ = /usr/bin/make
+# environment
+XDG_RUNTIME_DIR = /run/user/1000
+# environment
+COLORTERM = truecolor
+# environment
+LC_CTYPE = en_US.UTF-8
+# makefile (from 'Makefile', line 1)
+GO_VERSION := latest
+# environment
+GOMODCACHE = /home/denis/go/pkg/mod
+# environment
+JOURNAL_STREAM = 8:35046
+# environment
+XDG_SESSION_CLASS = user
+# environment
+VSCODE_AMD_ENTRYPOINT = vs/workbench/api/node/extensionHostProcess
+# environment
+HOME = /home/denis
+# environment
+QT_IM_MODULE = ibus
+# environment
+ELECTRON_RUN_AS_NODE = 1
+# environment
+VSCODE_IPC_HOOK = /run/user/1000/vscode-5e0b0481-1.78-main.sock
+# environment
+TERM = xterm-256color
+# environment
+GOPROXY = https://d.davydov:RAhVHsgkyDSMRhH6BgfQ@nexus.mindsw.dev/repository/go-golang-remote/
+# default
+.RECIPEPREFIX := 
+# automatic
+<F = $(notdir $<)
+# default
+SUFFIXES := 
+# environment
+VSCODE_CLI = 1
+# environment
+ELECTRON_NO_ATTACH_CONSOLE = 1
+# environment
+VTE_VERSION = 7202
+# default
+.FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell nocomment grouped-target extra-prereqs notintermediate shell-export archives jobserver jobserver-fifo output-sync check-symlink guile load
+# environment
+XDG_MENU_PREFIX = gnome-
+# environment
+GDMSESSION = gnome
+# variable set hash-table stats:
+# Load=112/1024=11%, Rehash=0, Collisions=7/146=5%
+
+# Pattern-specific Variable Values
+
+# No pattern-specific variable values.
+
+# Directories
+
+# . (device 41, inode 53961): 17 files, no impossibilities.
+
+# 17 files, no impossibilities in 1 directories.
+
+# Implicit Rules
+
+# No implicit rules.
+
+# Files
+
+# Not a target:
+Makefile:
+#  Implicit rule search has been done.
+#  File is secondary (prerequisite of .SECONDARY).
+#  Last modified 2023-08-08 12:48:19.347977195
+#  File has been updated.
+#  Successfully updated.
+
+clean:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 59):
+	rm -f cmd/mind_agent
+	rm -f cmd/mind_agent.exe
+	rm -f cmd/windows/mind_agent.exe
+	rm -f cmd/windows/mind_agent_service.exe
+
+build-win:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 23):
+	@echo ":: Building $(shell basename $(PWD)) in MinGW container..."
+	docker run --rm -it \
+		-u "$${UID}:$${GID}" \
+		-e GOCACHE=/go/.cache \
+		-v "$(GOPATH)/src":/go/src \
+		-v "$(GOPATH)/pkg":/go/pkg \
+		-v "$(PWD)":/go/work \
+		-w /go/work \
+		x1unix/go-mingw:$(GO_VERSION) \
+		/bin/sh -c 'go build $(GO_BUILD_FLAGS)'
+
+build-installer:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 49):
+	@echo "Building installers"
+	$(MAKE) build -C installer
+
+cleanall: clean
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+ 
+#  recipe to execute (from 'Makefile', line 65):
+	$(MAKE) -C installer clean
+
+build-service:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 36):
+	@echo ":: Building $(shell basename $(PWD)) in MinGW container..."
+	docker run --rm -it \
+		-u "$${UID}:$${GID}" \
+		-e GOCACHE=/go/.cache \
+		-v "$(GOPATH)/src":/go/src \
+		-v "$(GOPATH)/pkg":/go/pkg \
+		-v "$(PWD)":/go/work \
+		-w /go/work \
+		x1unix/go-mingw:$(GO_VERSION) \
+		/bin/sh -c 'go build $(GO_BUILD_SERVICE_FLAGS)'
+
+# Not a target:
+.DEFAULT:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+build-all:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 8):
+	@echo "Building linux"
+	$(MAKE) build
+	@echo "Building windows"
+	$(MAKE) build-win
+	@echo "Building windows service"
+	$(MAKE) build-service
+	@echo "Building installers"
+	$(MAKE) build-installer
+
+# Not a target:
+all:
+#  Command line target.
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has not been updated.
+
+build:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 19):
+	go build -ldflags "-w -s -linkmode 'external' -extldflags '-static'"  -o ./cmd/mind_agent ./cmd/main.go
+
+mocks:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 75):
+	go generate ./...
+
+install:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 53):
+	cp -f ./cmd/mind_agent $(dst)
+	cp -f ./cmd/windows/mind_agent.exe $(dst)
+	cp -f ./cmd/windows/mind_agent_service.exe $(dst)
+	$(MAKE) -C installer install dst=$(dst)
+
+.PHONY: build-all build build-win build-service build-installer deploy-linux mocks deploy_to
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+deploy-linux:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 70):
+	scp ./cmd/mind_agent user@$(srv):/tmp
+	scp ./cmd/config.yml user@$(srv):/tmp
+
+deploy_to:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 79):
+	$(MAKE) cleanall
+	$(MAKE) build-all
+	sshpass -p $(pass) ssh $(user)@$(dst) 'sudo rm -f /opt/mind/bin/mind_agent'
+	sshpass -p $(pass) scp ./cmd/mind_agent $(user)@$(dst):/opt/mind/bin/mind_agent
+	sshpass -p $(pass) ssh $(user)@$(dst) 'sudo rm -f /opt/mind/bin/mind_agent.exe'
+	sshpass -p $(pass) scp ./cmd/windows/mind_agent.exe $(user)@$(dst):/opt/mind/bin/mind_agent.exe
+	sshpass -p $(pass) ssh $(user)@$(dst) 'sudo rm -f  /opt/mind/bin/mind_agent_service.exe'
+	sshpass -p $(pass) scp ./cmd/windows/mind_agent_service.exe $(user)@$(dst):/opt/mind/bin/mind_agent_service.exe
+	sshpass -p $(pass) ssh $(user)@$(dst) 'sudo rm -f  /opt/mind/bin/agent_installer.exe'
+	sshpass -p $(pass) scp ./installer/agent_installer.exe $(user)@$(dst):/opt/mind/bin/agent_installer.exe
+	sshpass -p $(pass) ssh $(user)@$(dst) 'sudo rm -f  /opt/mind/bin/agent_installer'
+	sshpass -p $(pass) scp ./installer/agent_installer $(user)@$(dst):/opt/mind/bin/agent_installer
+	sshpass -p $(pass) ssh $(user)@$(dst) 'sudo rm -f  /opt/mind/etc/mind_agent.service'
+	sshpass -p $(pass) scp ./systemd/mind_agent.service $(user)@$(dst):/opt/mind/etc/mind_agent.service
+
+# files hash-table stats:
+# Load=16/1024=2%, Rehash=0, Collisions=0/51=0%
+# VPATH Search Paths
+
+# No 'vpath' search paths.
+
+# No general ('VPATH' variable) search path.
+
+# strcache buffers: 1 (0) / strings = 34 / storage = 292 B / avg = 8 B
+# current buf: size = 8162 B / used = 292 B / count = 34 / avg = 8 B
+
+# strcache performance: lookups = 74 / hit rate = 54%
+# hash-table stats:
+# Load=34/8192=0%, Rehash=0, Collisions=0/74=0%
+# Finished Make data base on Mon Aug 14 10:32:16 2023
+
+ 

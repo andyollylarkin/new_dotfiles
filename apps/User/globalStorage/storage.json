@@ -18,28 +18,24 @@
             "file:///home/denis/Desktop/greg-iia": "__default__profile__",
             "file:///home/denis/Desktop/golibtest": "__default__profile__",
             "file:///home/denis/Desktop/hu2": "__default__profile__",
-            "file:///home/denis/Desktop/hostutils": "__default__profile__",
+            "file:///home/denis/Desktop/sqlinjections_example": "__default__profile__",
+            "file:///home/denis/Desktop/go-grpc-server-streaming-example": "__default__profile__",
+            "file:///home/denis/Desktop/go-micro": "__default__profile__",
             "file:///home/denis/Desktop/mind-libs": "__default__profile__",
-            "file:///home/denis/Desktop/mind-agent": "__default__profile__",
-            "file:///home/denis/Desktop/protogo": "__default__profile__",
             "file:///home/denis/Desktop/RoadToBT": "__default__profile__",
+            "file:///home/denis/Desktop/protogo": "__default__profile__",
+            "file:///home/denis/Desktop/watermill-io": "__default__profile__",
+            "file:///home/denis/Desktop/wmwrapper": "__default__profile__",
+            "file:///home/denis/Desktop/watermill-http": "__default__profile__",
+            "file:///home/denis/Desktop/wmtest": "__default__profile__",
             "file:///home/denis/Desktop/casbin_go_test": "__default__profile__",
-            "file:///home/denis/Desktop/orchestrator": "__default__profile__",
-            "file:///home/denis/Desktop/sqlinjections_example": "__default__profile__"
+            "file:///home/denis/Desktop/watermillhttpwrapper": "__default__profile__",
+            "file:///home/denis/Desktop/hostutils": "__default__profile__",
+            "file:///home/denis/Desktop/config-hot-reload": "__default__profile__",
+            "file:///home/denis/Desktop/mind-agent": "__default__profile__",
+            "file:///home/denis/Desktop/orchestrator": "__default__profile__"
         },
-        "emptyWindows": {
-            "1690319658374": "__default__profile__",
-            "1690380357574": "__default__profile__",
-            "1690380782194": "__default__profile__",
-            "1690462725650": "__default__profile__",
-            "1690465704594": "__default__profile__",
-            "1690468157531": "__default__profile__",
-            "1690469261583": "__default__profile__",
-            "1690487371629": "__default__profile__",
-            "1690535743736": "__default__profile__",
-            "1690663461859": "__default__profile__",
-            "1690741047678": "__default__profile__"
-        }
+        "emptyWindows": {}
     },
     "profileAssociationsMigration": true,
     "telemetry.machineId": "ffbf33a8debe12e5f60f3d9461ffdc65b4fdd8bbd75edafc207fb36471ee9d06",
@@ -47,68 +43,22 @@
         "workspaces": [],
         "folders": [
             {
-                "folderUri": "file:///home/denis/Desktop/protogo"
-            },
-            {
                 "folderUri": "file:///home/denis/Desktop/hostutils"
             },
             {
-                "folderUri": "file:///home/denis/Desktop/mind-libs"
+                "folderUri": "file:///home/denis/Desktop/watermillhttpwrapper"
             },
             {
-                "folderUri": "file:///home/denis/Desktop/orchestrator"
+                "folderUri": "file:///home/denis/Desktop/config-hot-reload"
             },
             {
                 "folderUri": "file:///home/denis/Desktop/mind-agent"
             },
             {
-                "folderUri": "file:///home/denis/Desktop/RoadToBT"
-            },
-            {
-                "folderUri": "file:///home/denis/Desktop/casbin_go_test"
-            },
-            {
-                "folderUri": "file:///home/denis/Desktop/sqlinjections_example"
+                "folderUri": "file:///home/denis/Desktop/orchestrator"
             }
         ],
-        "emptyWindows": [
-            {
-                "backupFolder": "1690318304390"
-            },
-            {
-                "backupFolder": "1690319658374"
-            },
-            {
-                "backupFolder": "1690380357574"
-            },
-            {
-                "backupFolder": "1690380782194"
-            },
-            {
-                "backupFolder": "1690462725650"
-            },
-            {
-                "backupFolder": "1690465704594"
-            },
-            {
-                "backupFolder": "1690468157531"
-            },
-            {
-                "backupFolder": "1690469261583"
-            },
-            {
-                "backupFolder": "1690487371629"
-            },
-            {
-                "backupFolder": "1690535743736"
-            },
-            {
-                "backupFolder": "1690663461859"
-            },
-            {
-                "backupFolder": "1690741047678"
-            }
-        ]
+        "emptyWindows": []
     },
     "lastKnownMenubarData": {
         "menus": {
@@ -1745,27 +1695,38 @@
             "editorPartMinWidth": 220,
             "titleBarHeight": 30,
             "activityBarWidth": 48,
-            "sideBarWidth": 305,
+            "sideBarWidth": 0,
             "statusBarHeight": 22,
             "windowBorder": false
         }
     },
     "windowsState": {
         "lastActiveWindow": {
-            "folder": "file:///home/denis/Desktop/mind-libs",
-            "backupPath": "/home/denis/.config/Code/Backups/c0a1cc8f55bfab937fbf5e40d8db12e1",
+            "folder": "file:///home/denis/Desktop/orchestrator",
+            "backupPath": "/home/denis/.config/Code/Backups/4db35bd80bc0b8c63e76fc9523fe2695",
             "uiState": {
                 "mode": 0,
-                "x": 0,
-                "y": 0,
-                "width": 1920,
-                "height": 1080
+                "x": 448,
+                "y": 156,
+                "width": 1024,
+                "height": 768
             }
         },
         "openedWindows": [
             {
                 "folder": "file:///home/denis/Desktop/hostutils",
                 "backupPath": "/home/denis/.config/Code/Backups/fe8da61037ab94b1c4462e1065f5cc26",
+                "uiState": {
+                    "mode": 0,
+                    "x": 448,
+                    "y": 138,
+                    "width": 1024,
+                    "height": 768
+                }
+            },
+            {
+                "folder": "file:///home/denis/Desktop/config-hot-reload",
+                "backupPath": "/home/denis/.config/Code/Backups/17ff9debd007bd551da7ff6562f87f3d",
                 "uiState": {
                     "mode": 0,
                     "x": 0,
@@ -1775,36 +1736,25 @@
                 }
             },
             {
-                "folder": "file:///home/denis/Desktop/mind-libs",
-                "backupPath": "/home/denis/.config/Code/Backups/c0a1cc8f55bfab937fbf5e40d8db12e1",
+                "folder": "file:///home/denis/Desktop/mind-agent",
+                "backupPath": "/home/denis/.config/Code/Backups/714a9c4d0865c731d6b482b4491ffb4b",
                 "uiState": {
                     "mode": 0,
-                    "x": 0,
-                    "y": 0,
-                    "width": 1920,
-                    "height": 1080
-                }
-            },
-            {
-                "folder": "file:///home/denis/Desktop/protogo",
-                "backupPath": "/home/denis/.config/Code/Backups/ac326cec2464db517396dedbe1cc63c3",
-                "uiState": {
-                    "mode": 1,
-                    "x": 0,
-                    "y": 0,
-                    "width": 1920,
-                    "height": 1080
+                    "x": 448,
+                    "y": 156,
+                    "width": 1024,
+                    "height": 768
                 }
             },
             {
                 "folder": "file:///home/denis/Desktop/orchestrator",
                 "backupPath": "/home/denis/.config/Code/Backups/4db35bd80bc0b8c63e76fc9523fe2695",
                 "uiState": {
-                    "mode": 1,
-                    "x": 0,
-                    "y": 0,
-                    "width": 1920,
-                    "height": 1080
+                    "mode": 0,
+                    "x": 448,
+                    "y": 156,
+                    "width": 1024,
+                    "height": 768
                 }
             }
         ]

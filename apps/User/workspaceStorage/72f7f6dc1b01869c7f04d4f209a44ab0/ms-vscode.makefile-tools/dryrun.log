@@ -1,0 +1,31 @@
+make --dry-run --always-make --keep-going --print-directory
+make: Entering directory '/home/denis/Desktop/orchestrator'
+make -C jobworker VERSION=2.1/guard-utils
+make[1]: Entering directory '/home/denis/Desktop/orchestrator/jobworker'
+ 
+make clean
+make[2]: Entering directory '/home/denis/Desktop/orchestrator/jobworker'
+rm -f jobworker
+make[2]: Leaving directory '/home/denis/Desktop/orchestrator/jobworker'
+CGO_ENABLED=0 GOOS=linux go build -ldflags "-w -s -X gitlab.mindsw.io/mind-migration/orchestrator/libs/common.MINDVER=2.1/guard-utils -X 'gitlab.mindsw.io/mind-migration/orchestrator/libs/common.BUILDTIME=1691999347'" -o jobworker -a
+make[1]: Leaving directory '/home/denis/Desktop/orchestrator/jobworker'
+make -C api VERSION=2.1/guard-utils
+ 
+make[1]: Entering directory '/home/denis/Desktop/orchestrator/api'
+make clean
+make[2]: Entering directory '/home/denis/Desktop/orchestrator/api'
+rm -rf api docs
+make[2]: Leaving directory '/home/denis/Desktop/orchestrator/api'
+CGO_ENABLED=0 GOOS=linux go build -ldflags "-w -s -X gitlab.mindsw.io/mind-migration/orchestrator/libs/common.MINDVER=2.1/guard-utils -X 'gitlab.mindsw.io/mind-migration/orchestrator/libs/common.BUILDTIME=1691999347'" -o api -a
+./swaggerGenSpec.sh
+make[1]: Leaving directory '/home/denis/Desktop/orchestrator/api'
+make -C scheduler VERSION=2.1/guard-utils
+make[1]: Entering directory '/home/denis/Desktop/orchestrator/scheduler'
+CGO_ENABLED=0 GOOS=linux go build -ldflags "-w -s -X gitlab.mindsw.io/mind-migration/orchestrator/libs/common.MINDVER=2.1/guard-utils -X 'gitlab.mindsw.io/mind-migration/orchestrator/libs/common.BUILDTIME=1691999347'" -o "scheduler" -a
+make[1]: Leaving directory '/home/denis/Desktop/orchestrator/scheduler'
+make -C libs/patches VERSION=2.1/guard-utils
+make[1]: Entering directory '/home/denis/Desktop/orchestrator/libs/patches'
+make[1]: Nothing to be done for 'all'.
+make[1]: Leaving directory '/home/denis/Desktop/orchestrator/libs/patches'
+make: Leaving directory '/home/denis/Desktop/orchestrator'
+ 

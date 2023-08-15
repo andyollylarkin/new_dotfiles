@@ -1,0 +1,1 @@
+{"buildTargets":["build","fmt","test","test_race","test_reconnect","test_short","test_stress","test_v","up","update_watermill","wait"],"launchTargets":[],"customConfigurationProvider":{"workspaceBrowse":{"browsePath":[],"compilerArgs":[]},"fileIndex":[]}}

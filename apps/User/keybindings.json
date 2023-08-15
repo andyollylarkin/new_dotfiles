@@ -37,6 +37,10 @@
     "key": "shift+cmd+a",
     "command": "workbench.action.focusActiveEditorGroup"
   },
+  {
+    "key": "ctrl+shift+g",
+    "command": "gitlens.toggleGraph"
+  },
   // SHOW QUICK DOCUMENTATION
   {
     "key": "cmd+shift+q",
@@ -93,7 +97,7 @@
   },
   {
     "key": "ctrl+shift+j",
-    "command": "workbench.action.toggleSidebarVisibility",
+    "command": "workbench.action.toggleSidebarPosition",
     "when": "explorerViewletVisible && editorFocus || sideBarFocus"
   },
   {

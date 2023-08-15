@@ -150,6 +150,7 @@
   "[cpp]": {
     "editor.defaultFormatter": "ms-vscode.cpptools"
   },
+  // GOLANG
   "[go]": {
     "editor.defaultFormatter": "golang.go",
     "editor.formatOnSave": true,
@@ -166,19 +167,21 @@
     }
   },
   "go.lintTool": "golangci-lint",
-  "go.testFlags": [
-    "-count",
-    "1",
-    "-race"
-  ],
   "gopls": {
-    "ui.semanticTokens": true
+    "ui.semanticTokens": true,
+    "ui.completion.usePlaceholders": true
   },
   "go.lintFlags": [
     "--fast",
     "--enable-all"
   ],
+  "go.testFlags": [
+    "-count",
+    "1",
+    "-race"
+  ],
   "go.lintOnSave": "file",
+  // GOLANG
   "[javascript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
@@ -189,5 +192,6 @@
     "editor.insertSpaces": true,
     "editor.tabSize": 4
   },
-  "workbench.colorTheme": "Dracula"
+  "workbench.colorTheme": "Dracula",
+  "workbench.experimental.sidePanel.enabled": true
 }
