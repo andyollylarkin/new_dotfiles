@@ -1,1 +1,0 @@
-{"buildTargets":["build","build-all","build-installer","build-service","build-win","clean","cleanall","deploy-linux","deploy_to","install","mocks"],"launchTargets":[],"customConfigurationProvider":{"workspaceBrowse":{"browsePath":[],"compilerArgs":[]},"fileIndex":[]}}

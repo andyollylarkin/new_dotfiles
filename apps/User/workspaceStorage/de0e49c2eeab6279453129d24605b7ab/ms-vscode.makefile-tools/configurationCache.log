@@ -1,1 +1,0 @@
-{"buildTargets":["all","build","buildall","buildhostutils","clean","cleanall","hostutils-get","install","installall","installdocs","installhostutils","patch","prepareforpkg","tools-get","translate"],"launchTargets":[],"customConfigurationProvider":{"workspaceBrowse":{"browsePath":[],"compilerArgs":[]},"fileIndex":[]}}

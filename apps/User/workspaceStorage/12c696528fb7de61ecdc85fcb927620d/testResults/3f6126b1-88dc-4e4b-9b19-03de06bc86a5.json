@@ -1,1 +1,0 @@
-{"id":"3f6126b1-88dc-4e4b-9b19-03de06bc86a5","completedAt":1686410018932,"tasks":[{"id":"d17ec47b-a2e5-46d5-b7c9-09cba1477259"}],"name":"Test run at 6/10/2023, 6:13:38 PM","request":{"targets":[{"testIds":["go"],"profileGroup":2,"profileId":143592049,"controllerId":"go"}],"exclude":[]},"items":[]}

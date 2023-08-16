@@ -1,6 +1,0 @@
-make --dry-run --always-make --keep-going --print-directory
-make: Entering directory '/home/denis/Desktop/mind-libs'
-make: Leaving directory '/home/denis/Desktop/mind-libs'
- 
-make: *** No targets specified and no makefile found.  Stop.
-
