@@ -167,6 +167,10 @@
     }
   },
   "go.lintTool": "golangci-lint",
+  "go.formatTool": "gofumpt",
+  "go.alternateTools": {
+    "customFormatter": "gofumpt"
+  },
   "gopls": {
     "ui.semanticTokens": true,
     "ui.completion.usePlaceholders": true
@@ -178,8 +182,14 @@
   "go.testFlags": [
     "-count",
     "1",
-    "-race"
   ],
+  // "go.testFlags": [
+  //   "-count",
+  //   "1",
+  //   "-race",
+  //   "-parallel",
+  //   "4"
+  // ],
   "go.lintOnSave": "file",
   // GOLANG
   "[javascript]": {
@@ -193,5 +203,4 @@
     "editor.tabSize": 4
   },
   "workbench.colorTheme": "Dracula",
-  "workbench.experimental.sidePanel.enabled": true
 }

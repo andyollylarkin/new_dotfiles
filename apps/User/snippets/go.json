@@ -52,5 +52,13 @@
 			"\t$2",
 			"}"
 		]
-	}
+	},
+	"Struct placeholder": {
+		"prefix": "struct",
+		"body": [
+			"type $1 struct {",
+			"\t$2",
+			"}"
+		],
+	},
 }
