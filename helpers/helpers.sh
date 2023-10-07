@@ -33,13 +33,13 @@ function remove(){
 }
 
 get_os_type(){
-    which dpkg &>/dev/null;
-    e_code=$?
-    if [[ $e_code == 1 ]]; then
-        echo "rpm";
-    else
-        echo "deb";
-    fi
+    declare -A releases=(
+        ["debian"]="deb"
+        ["fedora"]="rpm"
+        ["ubuntu"]="deb"
+    )
+    release=$(cat /etc/os-release |grep -P '^ID'|cut -d "=" -f 2);
+    echo ${releases[$release]}
 }
 
 
