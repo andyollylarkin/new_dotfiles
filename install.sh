@@ -26,7 +26,7 @@ to_install=(
 );
 
 echo -e "\033[101mInstalling packages\033[0m"
-#install_packages
+install_packages $to_install
 
 #install oh-my-bash
 if [ ! -d ${HOME}/.oh-my-bash ]; then
@@ -53,7 +53,7 @@ for file in ${rm_rc_files[@]}; do
 done
 
 echo "Install rcfiles";
-rcfiles=($(ls -a|grep -P '^(?!\.git)\.\w+'));
+rcfiles=($(ls -a|grep -P '^(?!\.git)\.\w+$'));
 for file in ${rcfiles[@]}; do
     if [ ! -f ${HOME}/${file} ]; then
         echo "Install ${file}. Dst path: ${HOME}/${file}";
