@@ -1,30 +1,28 @@
 #!/bin/bash
 
-TYPE_RPM=228
-TYPE_DEB=229
-
-detect_os(){
-	which dpkg 2>/dev/null;
-	exit_code=$?
-	if [[ $exit_code == 1 ]]; then
-		return $TYPE_RPM
-	else
-		return $TYPE_DEB
-	fi
+get_os_type(){
+    declare -A releases=(
+        ["debian"]="deb"
+        ["fedora"]="rpm"
+        ["ubuntu"]="deb"
+    )
+    release=$(cat /etc/os-release |grep -P '^ID'|cut -d "=" -f 2);
+    echo ${releases[$release]}
 }
 
+
 install_packages(){
-	detect_os
-	os_type=$?
-	if [[ $os_type == $TYPE_DEB ]]; then
-		install_deb $1
-	else
-		install_rmp $1
+    release=$(get_os_type);
+	if [[ $release == "deb" ]]; then
+		install_deb $@
+	elif [[ $release == "rpm" ]]; then
+		install_rmp $@
 	fi
 }
 
 
 install_deb(){
+    to_install=$@
 	for app in ${to_install[@]}; do
 		echo "install app " $app
 	    sudo apt install -y $app;
@@ -32,6 +30,8 @@ install_deb(){
 }
 
 install_rmp(){
+    to_install=$@
+    echo $to_install
 	for app in ${to_install[@]}; do
 		echo -e "\e[1minstall app\e[0m " $app
 	    sudo dnf install -y $app;
