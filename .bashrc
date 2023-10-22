@@ -136,5 +136,8 @@ done
 for sourced in ~/dotenv/helpers/*; do
     source $sourced;
 done
+for sourced in ~/dotenv/workfuncs/*; do
+    source $sourced;
+done
 
 set -o pipefail
