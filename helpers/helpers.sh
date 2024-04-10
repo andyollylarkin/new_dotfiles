@@ -37,8 +37,9 @@ get_os_type(){
         ["debian"]="deb"
         ["fedora"]="rpm"
         ["ubuntu"]="deb"
+        ["mint"]="deb"
     )
-    release=$(cat /etc/os-release |grep -P '^ID'|cut -d "=" -f 2);
+    local release=$(cat /etc/os-release |grep -P '^ID'|cut -d "=" -f 2|tr '[:upper:]' '[:lower:]');
     echo ${releases[$release]}
 }
 

@@ -163,7 +163,7 @@
     "editor.wordWrap": "bounded",
     "editor.wordWrapColumn": 160,
     "editor.codeActionsOnSave": {
-      "source.organizeImports": true
+      "source.organizeImports": "explicit"
     }
   },
   "go.lintTool": "golangci-lint",
@@ -178,31 +178,31 @@
   "go.lintFlags": [
     "--fast",
     "--enable-all",
-    "--disable gofumpt"
   ],
-  "go.testFlags": [
-    "-count",
-    "1",
-  ],
+  "go.lintOnSave": "file",
+  // "go.testFlags": [
+  //   "-count",
+  //   "1",
+  // ],
   "go.testFlags": [
     "-count",
     "1",
     "-race",
     "-parallel",
-    "4"
+    "4",
+    "-timeout",
+    "1m"
   ],
-  "go.lintOnSave": "file",
   // GOLANG
   "[javascript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "files.autoSave": "afterDelay",
   "todohighlight.isEnable": true,
-  "gitlens.graph.minimap.enabled": false,
   "[python]": {
     "editor.insertSpaces": true,
     "editor.tabSize": 4
   },
   "workbench.colorTheme": "Dracula",
-  "tabnine.experimentalAutoImports": true,
+  "gitlens.graph.minimap.enabled": false,
 }

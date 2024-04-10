@@ -184,4 +184,13 @@
     "key": "ctrl+alt+i",
     "command": "editor.action.revealDefinition"
   },
+  {
+    "key": "ctrl+[Slash]",
+    "command": "editor.action.commentLine",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "ctrl+k t",
+    "command": "workbench.action.tasks.runTask"
+  },
 ]
