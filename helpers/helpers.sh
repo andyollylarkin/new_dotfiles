@@ -4,8 +4,8 @@
 get_pass() {
     xclip --help 2>/dev/null;
     local exist_status=$?;
-    if [ $exist_status == 127 ]; then
-        os_type=$(get_os_type);
+    local os_type=$(get_os_type)
+    if [[ $exist_status == 127 && $os_type != "osx" ]]; then
         echo -e "\e[41mINSTALLING XCLIP\e[0m\n"
         if [[ $os_type == "deb" ]]; then
             sudo apt-get install -qqy xclip;
@@ -13,7 +13,7 @@ get_pass() {
             sudo dnf install -y xclip;
         fi
     fi
-    echo -n ${1}|md5sum|grep -Eo '([A-Z]|[a-z]|[0-9])+'|tr -d "\n"|xclip -selection clipboard;
+    echo -n ${1}|md5sum|grep -Po '(\d|\w){32}'|tr -d '\n'|xclip-select;
 }
 
 #-----USER_FUNCTIONS----
@@ -33,6 +33,11 @@ function remove(){
 }
 
 get_os_type(){
+    local is_darwin=$(uname -s)
+    if [[ $is_darwin == "Darwin" ]];then
+        echo "osx";
+        return
+    fi
     declare -A releases=(
         ["debian"]="deb"
         ["fedora"]="rpm"

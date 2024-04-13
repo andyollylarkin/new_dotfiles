@@ -43,7 +43,7 @@
   },
   // SHOW QUICK DOCUMENTATION
   {
-    "key": "cmd+shift+q",
+    "key": "ctrl+shift+q",
     "command": "editor.action.showHover",
     "when": "editorTextFocus"
   },
@@ -171,7 +171,7 @@
     "when": "editorTextFocus"
   },
   {
-    "key": "alt+escape",
+    "key": "ctrl+[space]",
     "command": "-editor.action.triggerSuggest",
     "when": "editorHasCompletionItemProvider && textInputFocus && !editorReadonly"
   },

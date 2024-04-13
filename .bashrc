@@ -5,11 +5,11 @@ case $- in
 esac
 
 # Path to your oh-my-bash installation.
-export OSH=/home/${USER}/.oh-my-bash
+export OSH=~/.oh-my-bash
 
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-bash is loaded.
-OSH_THEME="powerline"
+OSH_THEME="agnoster"
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -120,10 +120,13 @@ fi
 # alias bashconfig="mate ~/.bashrc"
 # alias ohmybash="mate ~/.oh-my-bash"
 
+[ -f /opt/homebrew/etc/bash_completion ] && . /opt/homebrew/etc/bash_completion
 
 #-------EXPORTS-----------
 export GOPATH=$(go env GOPATH);
-export PATH="$GOPATH/bin:$PATH:/usr/local/bin:/usr/local/go/bin"
+export PATH=/opt/homebrew/bin:$PATH;
+export PATH="$GOPATH/bin:$PATH:/usr/local/bin:/usr/local/go/bin";
+export PATH=/opt/homebrew/Cellar/bin:$PATH;
 
 #------USER DEFINED------
 shopt -s extglob;
@@ -134,9 +137,6 @@ for sourced in ~/dotenv/aliases/*; do
     source $sourced;
 done
 for sourced in ~/dotenv/helpers/*; do
-    source $sourced;
-done
-for sourced in ~/dotenv/workfuncs/*; do
     source $sourced;
 done
 

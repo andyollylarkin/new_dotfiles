@@ -1,15 +1,20 @@
 #!/usr/bin/env bash
 
+source ./install_funcs.sh
 
+os_type=$(get_os_type);
 user=$(whoami)
-if [[ $user != 'root' ]]; then
+if [[ $user != 'root' && $os_type != 'osx' ]]; then
 	echo -e "\033[101mPlease use with sudo!\033[0m"
 	exit 1;
 fi
 
-source ./install_funcs.sh
-
 CURR_DIR=$(pwd);
+if [[ $(basename $CURR_DIR) != "dotenv" ]]; then
+    echo "Current directory is not dotenv. Exit.";
+    exit 1;
+fi
+
 BASH_INTERPRETER=$(which bash);
 HOME=$(get_home $SUDO_UID);
 
@@ -20,6 +25,7 @@ to_install=(
     "vim"
     "keepassxc"
     "curl"
+    "bash"
     "git"
     "fonts-powerline"
     "powerline-fonts" #for rpm based systems
@@ -35,12 +41,18 @@ else
     echo -e "\033[101mOh-my-bash already installed\033[0m"
 fi
 
+if [[ $os_type == "osx" ]]; then
+    echo "Install brew"
+    $BASH_INTERPRETER -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+fi
+
 # install rc files
 rm_rc_files=(
     ".vimrc"
     ".bashrc"
     ".inputrc"
     ".curlrc"
+    ".tmux.conf"
 );
 
 #remove *rc files if exists
@@ -53,7 +65,7 @@ for file in ${rm_rc_files[@]}; do
 done
 
 echo "Install rcfiles";
-rcfiles=($(ls -a|grep -P '^(?!\.git)\.\w+$'));
+rcfiles=($(ls -a|tail -n +3|grep -Po '^(?!\.git)\.[\w|\.]+$'));
 for file in ${rcfiles[@]}; do
     if [ ! -f ${HOME}/${file} ]; then
         echo "Install ${file}. Dst path: ${HOME}/${file}";

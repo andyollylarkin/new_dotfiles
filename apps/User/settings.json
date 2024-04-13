@@ -139,7 +139,6 @@
   "window.closeWhenEmpty": false,
   "explorer.confirmDelete": false,
   "explorer.compactFolders": true,
-  "workbench.iconTheme": "material-icon-theme",
   "window.menuBarVisibility": "compact",
   // PHP
   "php.suggest.basic": false,
@@ -205,4 +204,5 @@
   },
   "workbench.colorTheme": "Dracula",
   "gitlens.graph.minimap.enabled": false,
+  "workbench.iconTheme": "material-icon-theme",
 }
