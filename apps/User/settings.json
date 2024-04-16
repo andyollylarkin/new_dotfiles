@@ -205,4 +205,5 @@
   "workbench.colorTheme": "Dracula",
   "gitlens.graph.minimap.enabled": false,
   "workbench.iconTheme": "material-icon-theme",
+  "terminal.external.linuxExec": "Terminal.app",
 }

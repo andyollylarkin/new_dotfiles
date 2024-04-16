@@ -81,6 +81,7 @@ plugins=(
   bashmarks
   progress
   npm
+  golang
 )
 
 # Which plugins would you like to conditionally load? (plugins can be found in ~/.oh-my-bash/plugins/*)
@@ -122,6 +123,7 @@ fi
 
 [ -f /opt/homebrew/etc/bash_completion ] && . /opt/homebrew/etc/bash_completion
 
+
 #-------EXPORTS-----------
 export GOPATH=$(go env GOPATH);
 export PATH=/opt/homebrew/bin:$PATH;
@@ -131,6 +133,7 @@ export PATH=/opt/homebrew/Cellar/bin:$PATH;
 #------USER DEFINED------
 shopt -s extglob;
 set +H # disable history expansion
+set -o pipefail
 
 
 for sourced in ~/dotenv/aliases/*; do
@@ -140,4 +143,5 @@ for sourced in ~/dotenv/helpers/*; do
     source $sourced;
 done
 
-set -o pipefail
+# Attach to existing tmux session OR create new tmux session
+tmux_attach
