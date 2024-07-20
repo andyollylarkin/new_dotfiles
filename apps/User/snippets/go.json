@@ -61,4 +61,10 @@
 			"}"
 		],
 	},
+	"Implement interface": {
+		"prefix": "implement",
+		"body": [
+			"// $1 *$2"
+		],
+	}
 }

@@ -97,7 +97,8 @@
     }
   ],
   // EDITOR
-  "editor.fontSize": 13,
+  "editor.wordBasedSuggestions": "off",
+  "editor.fontSize": 12,
   "editor.fontLigatures": true,
   "editor.fontWeight": "450",
   "editor.minimap.enabled": false,
@@ -172,13 +173,13 @@
   },
   "gopls": {
     "ui.semanticTokens": true,
-    "ui.completion.usePlaceholders": true
+    "ui.completion.usePlaceholders": true,
+    "ui.completion.experimentalPostfixCompletions": false
   },
   "go.lintFlags": [
     "--fast",
-    "--enable-all",
   ],
-  "go.lintOnSave": "file",
+  "go.lintOnSave": "workspace",
   // "go.testFlags": [
   //   "-count",
   //   "1",
@@ -192,9 +193,12 @@
     "-timeout",
     "1m"
   ],
+  "go-struct-tag.cases": [
+    "camel"
+  ],
   // GOLANG
   "[javascript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "vscode.typescript-language-features"
   },
   "files.autoSave": "afterDelay",
   "todohighlight.isEnable": true,
@@ -202,8 +206,19 @@
     "editor.insertSpaces": true,
     "editor.tabSize": 4
   },
-  "workbench.colorTheme": "Dracula",
+  "workbench.colorTheme": "Dracula Theme",
   "gitlens.graph.minimap.enabled": false,
   "workbench.iconTheme": "material-icon-theme",
   "terminal.external.linuxExec": "Terminal.app",
+  "hexeditor.columnWidth": 16,
+  "hexeditor.showDecodedText": true,
+  "hexeditor.defaultEndianness": "little",
+  "hexeditor.inspectorType": "aside",
+  "window.commandCenter": false,
+  "files.associations": {
+    "*.go": "go"
+  },
+  "diffEditor.renderSideBySide": true,
+  "diffEditor.ignoreTrimWhitespace": true,
+  "diffEditor.experimental.showMoves": true,
 }

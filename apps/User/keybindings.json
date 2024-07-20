@@ -39,7 +39,7 @@
   },
   {
     "key": "ctrl+shift+g",
-    "command": "gitlens.toggleGraph"
+    "command": "git-graph.view"
   },
   // SHOW QUICK DOCUMENTATION
   {
@@ -121,6 +121,16 @@
     "when": "editorFocus"
   },
   {
+    "key": "cmd+k o",
+    "command": "workbench.action.moveEditorToNewWindow",
+    "when": "editorFocus"
+  },
+  {
+    "key": "cmd+k o",
+    "command": "-workbench.action.copyEditorToNewWindow",
+    "when": "editorFocus"
+  },
+  {
     "key": "ctrl+h",
     "command": "workbench.action.toggleSidebarVisibility"
   },
@@ -193,4 +203,17 @@
     "key": "ctrl+k t",
     "command": "workbench.action.tasks.runTask"
   },
+  {
+    "key": "ctrl+alt+-",
+    "command": "workbench.action.navigateBackInNavigationLocations"
+  },
+  {
+    "key": "ctrl+alt+=",
+    "command": "workbench.action.navigateForwardInNavigationLocations"
+  },
+  {
+    "key": "ctrl+k i",
+    "command": "goimpl.ImplementInterfaceMethods",
+    "when": "editorTextFocus"
+  }
 ]
