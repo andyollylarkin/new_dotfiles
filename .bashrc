@@ -129,6 +129,8 @@ export GOPATH=$(go env GOPATH);
 export PATH=/opt/homebrew/bin:$PATH;
 export PATH="$GOPATH/bin:$PATH:/usr/local/bin:/usr/local/go/bin";
 export PATH=/opt/homebrew/Cellar/bin:$PATH;
+export PATH=/opt/alternatives/binaries:$PATH;
+export DOTENV=${HOME}/dotenv;
 
 #------USER DEFINED------
 shopt -s extglob;
@@ -136,10 +138,7 @@ set +H # disable history expansion
 set -o pipefail
 
 
-for sourced in ~/dotenv/aliases/*; do
-    source $sourced;
-done
-for sourced in ~/dotenv/helpers/*; do
+for sourced in $(find ${HOME}/dotenv -maxdepth 3 -name '*.sh' -not -name 'install.sh' -not -name '*.sql'); do
     source $sourced;
 done
 

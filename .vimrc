@@ -10,11 +10,12 @@ let python_highlight_all = 1
 syntax enable
 
 
-:noremap j <Left>
-:noremap k <Up>
-:noremap l <Down>
-:noremap ; <Right>
-:map h <Nop>
+noremap j <Left>
+noremap k <Up>
+noremap l <Down>
+noremap ; <Right>
+noremap h <Nop>
+noremap <Esc> :nohlsearch<CR><Esc>
 vmap j <Left>
 vmap k <Up>
 vmap l <Down>
@@ -32,6 +33,13 @@ vmap j <Left>
 vmap k <Up>
 vmap l <Down>
 vmap ; <Right>
-"Prevent clear register when text pasted
-xnoremap <expr> p 'pgv"'.v:register.'y`>'
-xnoremap <expr> P 'Pgv"'.v:register.'y`>'
+
+
+nnoremap dw "_dw
+nnoremap cw "_cw
+nnoremap daw "_daw
+nnoremap diw "_diw
+nnoremap diw "_diw
+nnoremap y "ay
+nnoremap yy "ayy
+vnoremap y "ay

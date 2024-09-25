@@ -52,10 +52,12 @@ function tmux_attach(){
     if [ -z $TMUX ]; then
         # checks if has already attached clients to "main" session. If connected, create a new session. (vscode terminal use case).
         if [ $(tmux list-clients -t main|wc -l) -ge 1 ]; then
-            tmux new-session
+            tmux new-session;
             return 0
         fi
         tmux attach-session -t main || tmux new-session -s main
+
+        return 0
     fi
 }
 

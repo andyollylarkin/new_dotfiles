@@ -17,6 +17,10 @@ function md5sum(){
 function code(){
     os=$(get_os_type);
     if [[ $os == "osx" ]];then
-       open /Applications/Visual\ Studio\ Code.app --args $*
+        open -a "Visual Studio Code" $*
     fi
 }
+
+# GIT
+
+alias git_last_tag='git tag --sort=-v:refname|head --lines=1'

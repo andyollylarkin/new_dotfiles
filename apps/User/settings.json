@@ -7,95 +7,8 @@
   "vim.searchHighlightTextColor": "#ffffff",
   "vim.ignorecase": true,
   "vim.foldfix": true,
-  "vim.normalModeKeyBindings": [
-    {
-      "before": [
-        "j"
-      ],
-      "after": [
-        "Left"
-      ]
-    },
-    {
-      "before": [
-        "k"
-      ],
-      "after": [
-        "Up"
-      ]
-    },
-    {
-      "before": [
-        "l"
-      ],
-      "after": [
-        "Down"
-      ]
-    },
-    {
-      "before": [
-        ";"
-      ],
-      "after": [
-        "Right"
-      ]
-    }
-  ],
-  "vim.insertModeKeyBindings": [
-    {
-      "before": [
-        "j",
-        "j"
-      ],
-      "after": [
-        "<Esc>"
-      ]
-    }
-  ],
-  "vim.normalModeKeyBindingsNonRecursive": [
-    {
-      "before": [
-        "<Esc>"
-      ],
-      "commands": [
-        ":noh"
-      ]
-    }
-  ],
-  "vim.visualModeKeyBindings": [
-    {
-      "before": [
-        "j"
-      ],
-      "after": [
-        "Left"
-      ]
-    },
-    {
-      "before": [
-        "k"
-      ],
-      "after": [
-        "Up"
-      ]
-    },
-    {
-      "before": [
-        "l"
-      ],
-      "after": [
-        "Down"
-      ]
-    },
-    {
-      "before": [
-        ";"
-      ],
-      "after": [
-        "Right"
-      ]
-    }
-  ],
+  "vim.vimrc.enable": true,
+  "vim.vimrc.path": "~/.vimrc",
   // EDITOR
   "editor.wordBasedSuggestions": "off",
   "editor.fontSize": 12,
@@ -166,24 +79,39 @@
       "source.organizeImports": "explicit"
     }
   },
+  // "go.alternateTools": {
+  //   "customFormatter": "gci"
+  // },
+  "go.formatTool": "gofumpt",
+  // "go.formatFlags": [
+  //   "write",
+  //   "--skip-generated",
+  //   "-s",
+  //   "standard",
+  //   "-s",
+  //   "default",
+  //   "-s",
+  //   "alias",
+  //   "-s",
+  //   "blank",
+  //   "-s",
+  //   "dot",
+  //   "-s",
+  //   "localmodule",
+  //   "--custom-order",
+  //   "."
+  // ],
   "go.lintTool": "golangci-lint",
-  "go.formatTool": "gofmt",
-  "go.alternateTools": {
-    "customFormatter": "gofumpt"
-  },
+  "go.lintFlags": [
+    "--fast",
+  ],
   "gopls": {
+    "formatting.gofumpt": true,
     "ui.semanticTokens": true,
     "ui.completion.usePlaceholders": true,
     "ui.completion.experimentalPostfixCompletions": false
   },
-  "go.lintFlags": [
-    "--fast",
-  ],
   "go.lintOnSave": "workspace",
-  // "go.testFlags": [
-  //   "-count",
-  //   "1",
-  // ],
   "go.testFlags": [
     "-count",
     "1",
@@ -191,10 +119,12 @@
     "-parallel",
     "4",
     "-timeout",
-    "1m"
+    "1m",
+    "./..."
   ],
+  "go.coverOnTestPackage": true,
   "go-struct-tag.cases": [
-    "camel"
+    "snake"
   ],
   // GOLANG
   "[javascript]": {
@@ -205,6 +135,10 @@
   "[python]": {
     "editor.insertSpaces": true,
     "editor.tabSize": 4
+  },
+  "workbench.colorCustomizations": {
+    "editor.selectionBackground": "#F05A7E",
+    "editor.selectionForeground": "#FFFFFF",
   },
   "workbench.colorTheme": "Dracula Theme",
   "gitlens.graph.minimap.enabled": false,
@@ -221,4 +155,11 @@
   "diffEditor.renderSideBySide": true,
   "diffEditor.ignoreTrimWhitespace": true,
   "diffEditor.experimental.showMoves": true,
+  "editor.unicodeHighlight.invisibleCharacters": false,
+  "editor.unicodeHighlight.ambiguousCharacters": false,
+  "tabnine.experimentalAutoImports": true,
+  "solidity.telemetry": false,
+  "typescript.suggest.classMemberSnippets.enabled": true,
+  "typescript.suggest.enabled": true,
+  "typescript.suggest.completeFunctionCalls": true
 }
