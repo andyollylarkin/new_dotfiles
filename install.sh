@@ -29,6 +29,7 @@ to_install=(
     "git"
     "fonts-powerline"
     "powerline-fonts" #for rpm based systems
+    "pass"
 );
 
 echo -e "\033[101mInstalling packages\033[0m"
