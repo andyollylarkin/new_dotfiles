@@ -28,8 +28,22 @@ install_packages(){
 }
 
 install_osx(){
+    if [[ -z $(which brew) ]]; then
+        /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+
+        if [[ $? != 0 ]]; then
+            echo -e "\e[0;41mCant install brew\e[0m";
+        fi
+    else
+        echo -e "\e[0;42mBrew already installed\e[0m";
+    fi
     to_install=$@
     for app in ${to_install[@]}; do
+        if [ ! -z $(which $app) ]; then
+            echo -e "\e[0;42m${app} already installed\e[0m";
+            continue;
+        fi
+
 		echo "install app " $app
         brew install $app;
     done
