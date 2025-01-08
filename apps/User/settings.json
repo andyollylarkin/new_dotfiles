@@ -2,16 +2,18 @@
   "security.workspace.trust.untrustedFiles": "open",
   // VIM
   "vim.cursorStylePerMode.normal": "block",
+  "vim.cursorStylePerMode.visual": "line-thin",
   "vim.hlsearch": true,
-  "vim.searchHighlightColor": "#e52165",
+  "vim.searchHighlightColor": "#E52165",
   "vim.searchHighlightTextColor": "#ffffff",
   "vim.ignorecase": true,
   "vim.foldfix": true,
+  "vim.surround": true,
   "vim.vimrc.enable": true,
   "vim.vimrc.path": "~/.vimrc",
   // EDITOR
   "editor.wordBasedSuggestions": "off",
-  "editor.fontSize": 12,
+  "editor.fontSize": 13,
   "editor.fontLigatures": true,
   "editor.fontWeight": "450",
   "editor.minimap.enabled": false,
@@ -33,33 +35,26 @@
     "comments": "off",
     "strings": "off"
   },
+  "editor.formatOnSaveMode": "file",
   // GENERAL
   "debug.console.wordWrap": true,
-  /**
-  Because my input type switch keys is: Alt + Shift.
-  Switch input also trigger MenuBar
-  **/
   // TODO HIGHLIGHT
+  "todohighlight.isEnable": true,
   "todohighlight.isCaseSensitive": true,
-  "todohighlight.keywords": [
-    "TODO",
-    "REFACTORING",
-    "FIXME"
-  ],
-  "window.customMenuBarAltFocus": false, //
-  "telemetry.telemetryLevel": "off",
+  "todohighlight.keywords": ["TODO", "REFACTORING", "FIXME"],
+  "todohighlight.defaultStyle": {
+    "backgroundColor": "white"
+  },
+  // -----------------------
+  "telemetry.telemetryLevel": "all",
   "window.title": "DevHub - ${folderName}",
   "window.titleBarStyle": "custom", // Title bar will change color to match the color theme
   "window.closeWhenEmpty": false,
   "explorer.confirmDelete": false,
   "explorer.compactFolders": true,
-  "window.menuBarVisibility": "compact",
   // PHP
   "php.suggest.basic": false,
-  // GITLENS
-  "gitlens.defaultDateFormat": "YYYY-MM-DD",
-  "gitlens.defaultDateShortFormat": null,
-  "editor.formatOnSaveMode": "file",
+  // C++
   "[cpp]": {
     "editor.defaultFormatter": "ms-vscode.cpptools"
   },
@@ -70,48 +65,29 @@
     "editor.quickSuggestions": {
       "strings": "on"
     },
-    "editor.rulers": [
-      120
-    ],
+    "editor.rulers": [120],
     "editor.wordWrap": "bounded",
     "editor.wordWrapColumn": 160,
     "editor.codeActionsOnSave": {
       "source.organizeImports": "explicit"
     }
   },
-  // "go.alternateTools": {
-  //   "customFormatter": "gci"
-  // },
   "go.formatTool": "gofumpt",
-  // "go.formatFlags": [
-  //   "write",
-  //   "--skip-generated",
-  //   "-s",
-  //   "standard",
-  //   "-s",
-  //   "default",
-  //   "-s",
-  //   "alias",
-  //   "-s",
-  //   "blank",
-  //   "-s",
-  //   "dot",
-  //   "-s",
-  //   "localmodule",
-  //   "--custom-order",
-  //   "."
-  // ],
+  "go.formatFlags": ["-w"],
   "go.lintTool": "golangci-lint",
-  "go.lintFlags": [
-    "--fast",
-  ],
+  // "go.lintFlags": [
+  //   "--fast",
+  //   "--config",
+  //   "/Users/denis/Desktop/scala/s3proxyserver/.golangci.yml"
+  // ],
   "gopls": {
-    "formatting.gofumpt": true,
     "ui.semanticTokens": true,
     "ui.completion.usePlaceholders": true,
     "ui.completion.experimentalPostfixCompletions": false
   },
-  "go.lintOnSave": "workspace",
+  // "go.buildTags": "integration",
+  "go.useLanguageServer": true,
+  "go.lintOnSave": "package",
   "go.testFlags": [
     "-count",
     "1",
@@ -123,25 +99,28 @@
     "./..."
   ],
   "go.coverOnTestPackage": true,
-  "go-struct-tag.cases": [
-    "snake"
-  ],
-  // GOLANG
+  // "go-struct-tag.cases": ["snake"],
   "[javascript]": {
-    "editor.defaultFormatter": "vscode.typescript-language-features"
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "files.autoSave": "afterDelay",
-  "todohighlight.isEnable": true,
   "[python]": {
     "editor.insertSpaces": true,
     "editor.tabSize": 4
   },
   "workbench.colorCustomizations": {
-    "editor.selectionBackground": "#F05A7E",
-    "editor.selectionForeground": "#FFFFFF",
+    "[Dracula Theme]": {
+      "editorLineNumber.foreground": "#FFFFFF",
+      "editor.lineHighlightBackground": "#44475a",
+      "editor.selectionBackground": "#F05A7E",
+      "editor.selectionForeground": "#FFFFFF",
+      "editorOverviewRuler.commentForeground": "#FFFFFF",
+      "tab.inactiveForeground": "#FFFFFF",
+      "tab.activeForeground": "#FFFFFF",
+      "tab.activeBackground": "#ce097571"
+    }
   },
   "workbench.colorTheme": "Dracula Theme",
-  "gitlens.graph.minimap.enabled": false,
   "workbench.iconTheme": "material-icon-theme",
   "terminal.external.linuxExec": "Terminal.app",
   "hexeditor.columnWidth": 16,
@@ -150,16 +129,53 @@
   "hexeditor.inspectorType": "aside",
   "window.commandCenter": false,
   "files.associations": {
-    "*.go": "go"
+    "*.go": "go",
+    "*.vuex": "vue",
+    "*.tsx": "typescriptreact",
+    "*.jsx": "javascriptreact"
   },
   "diffEditor.renderSideBySide": true,
   "diffEditor.ignoreTrimWhitespace": true,
   "diffEditor.experimental.showMoves": true,
   "editor.unicodeHighlight.invisibleCharacters": false,
   "editor.unicodeHighlight.ambiguousCharacters": false,
-  "tabnine.experimentalAutoImports": true,
-  "solidity.telemetry": false,
+  "solidity.telemetry": true,
+  // typescript
   "typescript.suggest.classMemberSnippets.enabled": true,
   "typescript.suggest.enabled": true,
-  "typescript.suggest.completeFunctionCalls": true
+  "typescript.suggest.completeFunctionCalls": true,
+  "debug.disassemblyView.showSourceCode": false,
+  "editor.formatOnPaste": true,
+  "editor.formatOnType": true,
+
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[yaml]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "diffEditor.codeLens": true,
+  "gitlens.graph.minimap.enabled": false,
+  "gitlens.ai.model": "openai:o1-preview",
+  "github.copilot.advanced": {
+    "authProvider": "github"
+  }
 }

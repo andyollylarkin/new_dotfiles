@@ -1,2 +1,3 @@
 $if mode=emacs
-"\C-g": forward-word 
+#"\C-g": forward-word 
+"\C-g": beginning-of-line

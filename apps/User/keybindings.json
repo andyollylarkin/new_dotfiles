@@ -111,9 +111,12 @@
     "when": "terminalFocus"
   },
   {
-    "key": "ctrl+shift+e",
-    "command": "workbench.action.focusActiveEditorGroup",
-    "when": "!editorFocus"
+    "key": "cmd+shift+e",
+    "command": "workbench.action.focusActiveEditorGroup"
+  },
+  {
+    "key": "ctrl+e",
+    "command": "workbench.view.explorer"
   },
   {
     "key": "ctrl+alt+o",
@@ -131,7 +134,7 @@
     "when": "editorFocus"
   },
   {
-    "key": "ctrl+h",
+    "key": "cmd+h",
     "command": "workbench.action.toggleSidebarVisibility"
   },
   // REMOVE OLD KEYBINDINGS
@@ -185,7 +188,6 @@
     "command": "-editor.action.triggerSuggest",
     "when": "editorHasCompletionItemProvider && textInputFocus && !editorReadonly"
   },
-  // Disable closing window
   {
     "key": "ctrl+shift+w",
     "command": "-workbench.action.closeWindow"
@@ -215,5 +217,15 @@
     "key": "ctrl+k i",
     "command": "goimpl.ImplementInterfaceMethods",
     "when": "editorTextFocus"
+  },
+  {
+    "key": "f5",
+    "command": "workbench.action.debug.start",
+    "when": "debuggersAvailable && debugState == 'inactive' && !view.terminal.visible"
+  },
+  {
+    "key": "f5",
+    "command": "-workbench.action.debug.start",
+    "when": "debuggersAvailable && debugState == 'inactive'"
   }
 ]

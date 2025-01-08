@@ -24,3 +24,8 @@ function code(){
 # GIT
 
 alias git_last_tag='git tag --sort=-v:refname|head --lines=1'
+#alias ls='ls --color'
+
+alias git_commits_in_current_branch="cd $(pwd) && git log dev..HEAD --reverse --oneline | wc -l | xargs printf \"\033[1mCommits in $(git_current_branch): \033[0m%d\n\""
+
+alias git_inserted_in_current_branch="cd $(pwd) && git log dev..HEAD --shortstat --oneline  --reverse |awk '/files changed/ {sum+=\$4} END {print sum}'|xargs printf '\033[31mInserted: %d\n'"

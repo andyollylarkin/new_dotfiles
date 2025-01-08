@@ -121,16 +121,14 @@ fi
 # alias bashconfig="mate ~/.bashrc"
 # alias ohmybash="mate ~/.oh-my-bash"
 
-[ -f /opt/homebrew/etc/bash_completion ] && . /opt/homebrew/etc/bash_completion
-
-
 #-------EXPORTS-----------
-export GOPATH=$(go env GOPATH);
 export PATH=/opt/homebrew/bin:$PATH;
-export PATH="$GOPATH/bin:$PATH:/usr/local/bin:/usr/local/go/bin";
 export PATH=/opt/homebrew/Cellar/bin:$PATH;
 export PATH=/opt/alternatives/binaries:$PATH;
 export DOTENV=${HOME}/dotenv;
+export PATH="/opt/go/go/bin":$PATH;
+export GOPATH=$(go env GOPATH);
+export PATH=$GOPATH/bin:$PATH
 
 #------USER DEFINED------
 shopt -s extglob;
@@ -140,6 +138,10 @@ set -o pipefail
 
 for sourced in $(find ${HOME}/dotenv -maxdepth 3 -name '*.sh' -not -name 'install.sh' -not -name '*.sql'); do
     source $sourced;
+done
+
+for s in $(ls ${HOME}/.oh-my-bash/completions/*.sh); do
+    source $s;
 done
 
 # Attach to existing tmux session OR create new tmux session

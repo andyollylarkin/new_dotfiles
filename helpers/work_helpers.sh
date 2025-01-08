@@ -12,3 +12,21 @@ function git_push_new_tag(){
     git tag $tag;
     git push --tags;
 }
+
+function git_current_branch_stat(){
+    branch_from=$1
+    branch_to=$2;
+    result=0;
+    for i in $(git log ${branch_from}..${branch_to} --stat|grep -Po '(?<=\|)\s+\d+'|tr -d ' '); do 
+        result=$(( result + i )); 
+    done;
+    unset result;
+}
+
+function add_all_ssh_keys() {
+        
+    for i in $(ls -d ~/.ssh/!(*config*|*pub|known_hosts|authorized_keys|*old)); do
+        echo Import key: $i;
+        ssh-add $i
+    done
+}

@@ -20,6 +20,14 @@
 			"}"
 		]
 	},
+	"Infinity loop": {
+		"prefix": "ifor",
+		"body": [
+			"for {",
+			"\t$1",
+			"}"
+		]
+	},
 	"Define new method": {
 		"prefix": "method",
 		"body": [
