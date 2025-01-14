@@ -9,10 +9,11 @@ get_os_type(){
     declare -A releases=(
         ["debian"]="deb"
         ["fedora"]="rpm"
+        ["redos"]="rpm"
         ["ubuntu"]="deb"
         ["mint"]="deb"
     )
-    local release=$(cat /etc/os-release |grep -P '^ID'|cut -d "=" -f 2|tr '[:upper:]' '[:lower:]');
+    local release=$(grep -Po '(?<=^ID=)[^ ]*' /etc/os-release |tr -d '"' | tr '[:upper:]' '[:lower:]');
     echo ${releases[$release]}
 }
 

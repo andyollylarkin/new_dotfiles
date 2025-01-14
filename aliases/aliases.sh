@@ -18,7 +18,11 @@ function code(){
     os=$(get_os_type);
     if [[ $os == "osx" ]];then
         open -a "Visual Studio Code" $*
+
+        return 0;
     fi
+
+    code $*
 }
 
 # GIT
