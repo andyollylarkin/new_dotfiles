@@ -132,7 +132,8 @@
     "*.go": "go",
     "*.vuex": "vue",
     "*.tsx": "typescriptreact",
-    "*.jsx": "javascriptreact"
+    "*.jsx": "javascriptreact",
+    "*.d": "d"
   },
   "diffEditor.renderSideBySide": true,
   "diffEditor.ignoreTrimWhitespace": true,
@@ -140,11 +141,11 @@
   "editor.unicodeHighlight.invisibleCharacters": false,
   "editor.unicodeHighlight.ambiguousCharacters": false,
   "solidity.telemetry": true,
+  "python.languageServer": "Pylance",
   // typescript
   "typescript.suggest.classMemberSnippets.enabled": true,
   "typescript.suggest.enabled": true,
   "typescript.suggest.completeFunctionCalls": true,
-  "debug.disassemblyView.showSourceCode": false,
   "editor.formatOnPaste": true,
   "editor.formatOnType": true,
 
@@ -177,5 +178,12 @@
   "gitlens.ai.model": "openai:o1-preview",
   "github.copilot.advanced": {
     "authProvider": "github"
-  }
+  },
+  "cmake.pinnedCommands": [
+    "workbench.action.tasks.configureTaskRunner",
+    "workbench.action.tasks.runTask"
+  ],
+  "makefile.configureOnOpen": true,
+  "cmake.showConfigureWithDebuggerNotification": false,
+  "zig.zls.enabled": "on"
 }

@@ -144,5 +144,14 @@ for s in $(ls ${HOME}/.oh-my-bash/completions/*.sh); do
     source $s;
 done
 
+
+bind 'set show-all-if-ambiguous on'
+bind 'TAB:menu-complete'
+
+if [ -f /etc/bash_completion ]; then
+    . /etc/bash_completion
+fi
+
 # Attach to existing tmux session OR create new tmux session
 tmux_attach
+

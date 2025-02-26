@@ -1,0 +1,65 @@
+scale=2;
+define add_percent_to_number(num,p) {
+    return num + (num*p/100);
+};
+
+define apr_percent(rate,periods) {
+    return ((1+((rate/100)/periods))^periods)-1;
+};
+
+/* Функция для расчета суммы с учетом простого процента (APR) */
+define apr_sum(initial_sum, rate, time_in_years) {
+    return initial_sum + (initial_sum * (1 * (rate / 100) * time_in_years));
+}
+
+/* Функция для расчета APR (годовой процентной ставки) */
+define apr(interest, periods) {
+    return ((1 + (interest / 100) / periods)^periods - 1) * 100;
+}
+
+/* Функция для расчета APY (годовой процентной доходности) в процентах */
+define apy_percent(rate, periods) {
+    return ((1 + ((rate / 100) / periods))^periods) - 1;
+}
+
+/* Функция для расчета суммы с учетом APY */
+define apy_sum(initial_sum, rate, periods) {
+    return initial_sum * (1 + apy_percent(rate, periods));
+}
+
+/* Функция для расчета суммы арифметической прогрессии */
+define ar_progression_sum(days, inc_num) {
+    return (days / 2) * (2 * inc_num + (days - 1) * inc_num);
+}
+
+/* Альтернативная функция для суммы арифметической прогрессии */
+define ar_sum(days, inc_num) {
+    return (days / 2) * (2 * inc_num + (days - 1) * inc_num);
+}
+
+/* Функция для преобразования температуры из Цельсия в Фаренгейты */
+define cels_to_fahr(cels_temp) {
+    return (cels_temp * 9 / 5) + 32;
+}
+
+/* Функция для расчета сложного процента с дополнительными взносами */
+define comp_interest_with_add(initial_sum, annual_rate, time_in_years, add_sum) {
+    monthly_rate = annual_rate / 12;
+    months = 12 * time_in_years;
+    return initial_sum * (1 + monthly_rate)^months + add_sum * (((1 + monthly_rate)^months - 1) / monthly_rate);
+}
+
+/* Функция для расчета сложного процента */
+define compound_interest(initial_sum, annual_interest_rate, number_of_charges, count_of_years) {
+    return initial_sum * (1 + ((annual_interest_rate / 100) / number_of_charges))^(number_of_charges * count_of_years);
+}
+
+/* Функция для расчета процента от числа */
+define percent_from_number(num, percent) {
+    return num * (percent / 100);
+}
+
+/* Функция для расчета, какой процент составляет одно число от другого */
+define percent_number_from_another(num, another_number) {
+    return (num / another_number) * 100;
+}
