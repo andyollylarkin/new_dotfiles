@@ -44,4 +44,3 @@ nnoremap diw "_diw
 nnoremap diw "_diw
 nnoremap y "ay
 nnoremap yy "ayy
-vnoremap y "ay

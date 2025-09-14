@@ -41,7 +41,11 @@
   // TODO HIGHLIGHT
   "todohighlight.isEnable": true,
   "todohighlight.isCaseSensitive": true,
-  "todohighlight.keywords": ["TODO", "REFACTORING", "FIXME"],
+  "todohighlight.keywords": [
+    "TODO",
+    "REFACTORING",
+    "FIXME"
+  ],
   "todohighlight.defaultStyle": {
     "backgroundColor": "white"
   },
@@ -65,7 +69,9 @@
     "editor.quickSuggestions": {
       "strings": "on"
     },
-    "editor.rulers": [120],
+    "editor.rulers": [
+      120
+    ],
     "editor.wordWrap": "bounded",
     "editor.wordWrapColumn": 160,
     "editor.codeActionsOnSave": {
@@ -73,7 +79,9 @@
     }
   },
   "go.formatTool": "gofumpt",
-  "go.formatFlags": ["-w"],
+  "go.formatFlags": [
+    "-w"
+  ],
   "go.lintTool": "golangci-lint",
   // "go.lintFlags": [
   //   "--fast",
@@ -101,7 +109,7 @@
   "go.coverOnTestPackage": true,
   // "go-struct-tag.cases": ["snake"],
   "[javascript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "vscode.typescript-language-features"
   },
   "files.autoSave": "afterDelay",
   "[python]": {
@@ -133,10 +141,13 @@
     "*.vuex": "vue",
     "*.tsx": "typescriptreact",
     "*.jsx": "javascriptreact",
-    "*.d": "d"
+    "*.d": "d",
+    "*.yml": "ansible",
+    "*.yaml": "ansible",
+    "*.j2": "jinja"
   },
   "diffEditor.renderSideBySide": true,
-  "diffEditor.ignoreTrimWhitespace": true,
+  "diffEditor.ignoreTrimWhitespace": false,
   "diffEditor.experimental.showMoves": true,
   "editor.unicodeHighlight.invisibleCharacters": false,
   "editor.unicodeHighlight.ambiguousCharacters": false,
@@ -148,9 +159,8 @@
   "typescript.suggest.completeFunctionCalls": true,
   "editor.formatOnPaste": true,
   "editor.formatOnType": true,
-
   "[jsonc]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor.defaultFormatter": "vscode.json-language-features"
   },
   "[yaml]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
@@ -174,16 +184,19 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "diffEditor.codeLens": true,
-  "gitlens.graph.minimap.enabled": false,
-  "gitlens.ai.model": "openai:o1-preview",
-  "github.copilot.advanced": {
-    "authProvider": "github"
-  },
   "cmake.pinnedCommands": [
     "workbench.action.tasks.configureTaskRunner",
     "workbench.action.tasks.runTask"
   ],
   "makefile.configureOnOpen": true,
   "cmake.showConfigureWithDebuggerNotification": false,
-  "zig.zls.enabled": "on"
+  "chat.agent.enabled": true,
+  "[solidity]": {
+    "editor.defaultFormatter": "JuanBlanco.solidity"
+  },
+  "docker.extension.enableComposeLanguageServer": false,
+  "git.blame.statusBarItem.enabled": true,
+  "jest.enable": true,
+  "jest.rootPath": "${workspaceFolder}",
+  "git.blame.editorDecoration.enabled": true,
 }

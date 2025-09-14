@@ -22,4 +22,5 @@ OS=$(get_os_type);
 if [[ ${OS} -eq "Darwin" ]]; then
     # vscode allow vscode vim plugin movement key repeat multiple times
     defaults write com.microsoft.VSCode ApplePressAndHoldEnabled -bool false
+    defaults write Cursor ApplePressAndHoldEnabled -bool false
 fi

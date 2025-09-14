@@ -124,11 +124,10 @@ fi
 #-------EXPORTS-----------
 export PATH=/opt/homebrew/bin:$PATH;
 export PATH=/opt/homebrew/Cellar/bin:$PATH;
-export PATH=/opt/alternatives/binaries:$PATH;
 export DOTENV=${HOME}/dotenv;
-export PATH="/opt/go/go/bin":$PATH;
 export GOPATH=$(go env GOPATH);
 export PATH=$GOPATH/bin:$PATH
+export PASSWORD_STORE_DIR=~/pass_store
 
 #------USER DEFINED------
 shopt -s extglob;
@@ -155,3 +154,7 @@ fi
 # Attach to existing tmux session OR create new tmux session
 tmux_attach
 
+
+export PATH="$PATH:/Users/denis/.foundry/bin"
+
+export PATH="$PATH:/Users/denis/.foundry/bin"

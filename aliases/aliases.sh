@@ -17,8 +17,9 @@ function md5sum(){
 function code(){
     os=$(get_os_type);
     if [[ $os == "osx" ]];then
+        # Uncomment if u use cursor ai
+        #/Applications/Cursor.app/Contents/MacOS/Cursor $*;
         open -a "Visual Studio Code" $*
-
         return 0;
     fi
 

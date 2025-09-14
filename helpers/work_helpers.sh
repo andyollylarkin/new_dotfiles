@@ -33,6 +33,7 @@ function git_current_branch_stat(){
 }
 
 function add_all_ssh_keys() {
+    local p=$(pass show ssh-keys|tr -d '\n')
     for i in $(ls -d ~/.ssh/!(*config*|*pub|known_hosts|authorized_keys|*old)); do
         echo Import key: $i;
         ssh-add $i
